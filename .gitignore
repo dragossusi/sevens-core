@@ -1,0 +1,4 @@
+# Project exclude paths
+/.gradle/
+/logger/build/
+/socket/build/
