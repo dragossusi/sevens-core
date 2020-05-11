@@ -1,0 +1,6 @@
+rootProject.name = 'sevens-core'
+include 'socket'
+include 'logger'
+include ':payload'
+project(":payload").projectDir = file("../sevens-payload/library")
+
