@@ -21,4 +21,4 @@ import ro.sevens.logger.TagLogger
  * along with server.  If not, see [License](http://www.gnu.org/licenses/) .
  *
  */
-object SocketCommand : TagLogger("SocketCommand")
+object SocketCommandLogger : TagLogger("SocketCommand")

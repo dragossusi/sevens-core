@@ -2,7 +2,7 @@ package ro.sevens.socket.processor
 
 import com.google.gson.Gson
 import ro.sevens.socket.CommandFrame
-import ro.sevens.socket.SocketCommand
+import ro.sevens.socket.SocketCommandLogger
 import ro.sevens.socket.command.InFrameKey
 import ro.sevens.socket.command.RawCommand
 
@@ -47,7 +47,7 @@ class GsonCommandProcessor(val gson: Gson) : CommandProcessor {
     }
 
     override fun readRaw(frameText: String): RawCommand {
-        SocketCommand.d("received : $frameText")
+        SocketCommandLogger.d("received : $frameText")
         val delimiterIndex = frameText.indexOf(':')
         val key = if (delimiterIndex == -1) frameText else frameText.substring(0, delimiterIndex)
         val json = if (delimiterIndex == -1) null else frameText.substring(delimiterIndex + 1)
