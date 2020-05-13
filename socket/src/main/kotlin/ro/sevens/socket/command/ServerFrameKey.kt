@@ -23,9 +23,9 @@ import java.lang.reflect.Type
  * along with server.  If not, see [License](http://www.gnu.org/licenses/) .
  *
  */
-enum class InFrameKey(
-        override val key: String,
-        override val type: Type? = null
+enum class ServerFrameKey(
+    override val key: String,
+    override val type: Type? = null
 ) : FrameKey {
     @SerializedName("place")
     PLACE("place", Card::class.java),

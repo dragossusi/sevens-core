@@ -3,8 +3,9 @@ package ro.sevens.socket.processor
 import com.google.gson.Gson
 import ro.sevens.socket.CommandFrame
 import ro.sevens.socket.SocketCommandLogger
-import ro.sevens.socket.command.InFrameKey
+import ro.sevens.socket.command.FrameKey
 import ro.sevens.socket.command.RawCommand
+import java.util.*
 
 /**
  * server
@@ -25,7 +26,11 @@ import ro.sevens.socket.command.RawCommand
  * along with server.  If not, see [License](http://www.gnu.org/licenses/) .
  *
  */
-class GsonCommandProcessor(val gson: Gson) : CommandProcessor {
+class GsonCommandProcessor(
+    val gson: Gson,
+    val inFrameKeyValues: Array<out FrameKey>,
+    val outFrameKeyValues: Array<out FrameKey>
+) : CommandProcessor {
 
     override fun <T> process(command: CommandFrame<T>): String {
         return "${command.key}:${gson.toJson(command.data)}"
@@ -33,13 +38,13 @@ class GsonCommandProcessor(val gson: Gson) : CommandProcessor {
 
     override fun readIn(frameText: String): CommandFrame<*>? {
         val raw = readRaw(frameText)
-        InFrameKey.values().forEach {
+        inFrameKeyValues.forEach {
             if (it.key == raw.key) {
                 return CommandFrame(
-                        it,
-                        it.type?.let {
-                            gson.fromJson<Any>(raw.json, it)
-                        }
+                    it,
+                    it.type?.let {
+                        gson.fromJson<Any>(raw.json, it)
+                    }
                 )
             }
         }
@@ -51,6 +56,6 @@ class GsonCommandProcessor(val gson: Gson) : CommandProcessor {
         val delimiterIndex = frameText.indexOf(':')
         val key = if (delimiterIndex == -1) frameText else frameText.substring(0, delimiterIndex)
         val json = if (delimiterIndex == -1) null else frameText.substring(delimiterIndex + 1)
-        return RawCommand(key, json)
+        return RawCommand(key.toLowerCase(Locale.ENGLISH), json)
     }
 }
