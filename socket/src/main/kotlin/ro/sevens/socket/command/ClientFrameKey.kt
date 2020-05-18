@@ -1,9 +1,8 @@
 package ro.sevens.socket.command
 
 import com.google.gson.annotations.SerializedName
-import com.google.gson.reflect.TypeToken
-import ro.sevens.payload.Card
 import ro.sevens.payload.game.NewRoundResponse
+import ro.sevens.payload.game.PlayerTurnResponse
 import java.lang.reflect.Type
 
 /**
@@ -39,11 +38,14 @@ enum class ClientFrameKey(
     @SerializedName("new_round")
     NEW_ROUND(
         "new_round",
-        object : TypeToken<NewRoundResponse>() {}.type
+        NewRoundResponse::class.java
     ),
 
     @SerializedName("player_turn")
-    PLAYER_TURN("player_turn"),
+    PLAYER_TURN(
+        "player_turn",
+        PlayerTurnResponse::class.java
+    ),
 
     @SerializedName("room_stop")
     ROOM_STOP("room_stop")

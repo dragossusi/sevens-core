@@ -1,7 +1,6 @@
-package ro.sevens.socket
+package ro.sevens.logger
 
-import ro.sevens.logger.JavaLogger
-import ro.sevens.socket.processor.CommandProcessor
+import java.util.logging.Level
 import java.util.logging.Logger
 
 /**
@@ -23,4 +22,24 @@ import java.util.logging.Logger
  * along with server.  If not, see [License](http://www.gnu.org/licenses/) .
  *
  */
-object SocketCommandLogger : JavaLogger(Logger.getLogger(CommandProcessor::class.java.name))
+abstract class JavaLogger(
+    private val logger: Logger
+) : TagLogger {
+
+    override fun d(message: String) {
+        logger.log(Level.INFO, message)
+    }
+
+    override fun e(message: String) {
+        logger.log(Level.SEVERE, message)
+    }
+
+    override fun e(throwable: Throwable) {
+        logger.log(Level.SEVERE, throwable.message ?: "Error", throwable)
+    }
+
+    override fun w(message: String) {
+        logger.log(Level.WARNING, message)
+    }
+
+}

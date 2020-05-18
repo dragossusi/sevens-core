@@ -21,10 +21,7 @@ import ro.sevens.socket.command.FrameKey
  * along with server.  If not, see [License](http://www.gnu.org/licenses/) .
  *
  */
-class CommandFrame<out T>(
+data class CommandFrame<out T>(
     val key: FrameKey,
     val data: T?
-) {
-
-
-}
+)

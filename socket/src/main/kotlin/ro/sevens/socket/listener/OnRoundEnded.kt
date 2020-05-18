@@ -1,26 +1,24 @@
-package ro.sevens.socket
-
-import ro.sevens.logger.JavaLogger
-import ro.sevens.socket.processor.CommandProcessor
-import java.util.logging.Logger
+package ro.sevens.socket.listener
 
 /**
- * server
+ * sevens-client
  *
  * Copyright (C) 2020  Rachieru Dragos-Mihai
  *
- * server is free software: you can redistribute it and/or modify
+ * sevens-client is free software: you can redistribute it and/or modify
  * it under the terms of the GNU General Public License as published by
  * the Free Software Foundation, either version 2 of the License, or
  * (at your option) any later version.
  *
- * server is distributed in the hope that it will be useful,
+ * sevens-client is distributed in the hope that it will be useful,
  * but WITHOUT ANY WARRANTY; without even the implied warranty of
  * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
  * GNU General Public License for more details.
  *
  * You should have received a copy of the GNU General Public License
- * along with server.  If not, see [License](http://www.gnu.org/licenses/) .
+ * along with sevens-client.  If not, see [License](http://www.gnu.org/licenses/) .
  *
  */
-object SocketCommandLogger : JavaLogger(Logger.getLogger(CommandProcessor::class.java.name))
+interface OnRoundEnded {
+    fun onRoundEnded()
+}

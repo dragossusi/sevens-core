@@ -1,6 +1,7 @@
 package ro.sevens.socket.processor
 
 import com.google.gson.Gson
+import ro.sevens.logger.TagLogger
 import ro.sevens.socket.CommandFrame
 import ro.sevens.socket.SocketCommandLogger
 import ro.sevens.socket.command.FrameKey
@@ -27,9 +28,10 @@ import java.util.*
  *
  */
 class GsonCommandProcessor(
-    val gson: Gson,
-    val inFrameKeyValues: Array<out FrameKey>,
-    val outFrameKeyValues: Array<out FrameKey>
+    private val gson: Gson,
+    private val tagLogger: TagLogger,
+    private val inFrameKeyValues: Array<out FrameKey>,
+    private val outFrameKeyValues: Array<out FrameKey>
 ) : CommandProcessor {
 
     override fun <T> process(command: CommandFrame<T>): String {
@@ -52,7 +54,7 @@ class GsonCommandProcessor(
     }
 
     override fun readRaw(frameText: String): RawCommand {
-        SocketCommandLogger.d("received : $frameText")
+        tagLogger.d("received : $frameText")
         val delimiterIndex = frameText.indexOf(':')
         val key = if (delimiterIndex == -1) frameText else frameText.substring(0, delimiterIndex)
         val json = if (delimiterIndex == -1) null else frameText.substring(delimiterIndex + 1)
