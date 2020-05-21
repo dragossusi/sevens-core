@@ -1,5 +1,7 @@
 package ro.sevens.socket.listener
 
+import ro.sevens.payload.game.NewRoundResponse
+
 /**
  * sevens-client
  *
@@ -20,5 +22,5 @@ package ro.sevens.socket.listener
  *
  */
 interface OnRoundEnded {
-    fun onRoundEnded()
+    fun onRoundEnded(newRoundResponse: NewRoundResponse)
 }

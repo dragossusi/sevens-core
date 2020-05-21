@@ -22,24 +22,29 @@ import java.util.logging.Logger
  * along with server.  If not, see [License](http://www.gnu.org/licenses/) .
  *
  */
-abstract class JavaLogger(
-    private val logger: Logger
+open class JavaLogger(
+    private val logger: Logger,
+    private val tag: String
 ) : TagLogger {
 
     override fun d(message: String) {
-        logger.log(Level.INFO, message)
+        logger.log(Level.INFO, "$tag:  $message")
+    }
+
+    override fun i(message: String) {
+        logger.log(Level.INFO, "$tag: $message")
     }
 
     override fun e(message: String) {
-        logger.log(Level.SEVERE, message)
+        logger.log(Level.SEVERE, "$tag: $message")
     }
 
     override fun e(throwable: Throwable) {
-        logger.log(Level.SEVERE, throwable.message ?: "Error", throwable)
+        logger.log(Level.SEVERE, "$tag: ${throwable.message ?: "Error"}", throwable)
     }
 
     override fun w(message: String) {
-        logger.log(Level.WARNING, message)
+        logger.log(Level.WARNING, "$tag: $message")
     }
 
 }
