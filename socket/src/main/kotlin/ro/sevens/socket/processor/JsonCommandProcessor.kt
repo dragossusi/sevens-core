@@ -1,11 +1,11 @@
 package ro.sevens.socket.processor
 
-import com.google.gson.Gson
+import kotlinx.serialization.json.Json
 import ro.sevens.logger.TagLogger
 import ro.sevens.socket.CommandFrame
-import ro.sevens.socket.SocketCommandLogger
 import ro.sevens.socket.command.FrameKey
 import ro.sevens.socket.command.RawCommand
+import ro.sevens.socket.command.toCommandFrame
 import java.util.*
 
 /**
@@ -27,27 +27,22 @@ import java.util.*
  * along with server.  If not, see [License](http://www.gnu.org/licenses/) .
  *
  */
-class GsonCommandProcessor(
-    private val gson: Gson,
+class JsonCommandProcessor(
+    private val json: Json,
     private val tagLogger: TagLogger,
-    private val inFrameKeyValues: Array<out FrameKey>,
-    private val outFrameKeyValues: Array<out FrameKey>
+    private val inFrameKeyValues: Array<out FrameKey<*>>,
+    private val outFrameKeyValues: Array<out FrameKey<*>>
 ) : CommandProcessor {
 
     override fun <T> process(command: CommandFrame<T>): String {
-        return "${command.key}:${gson.toJson(command.data)}"
+        return "${command.key.key}:${command.toJson(json)}"
     }
 
     override fun readIn(frameText: String): CommandFrame<*>? {
         val raw = readRaw(frameText)
-        inFrameKeyValues.forEach {
-            if (it.key == raw.key) {
-                return CommandFrame(
-                    it,
-                    it.type?.let {
-                        gson.fromJson<Any>(raw.json, it)
-                    }
-                )
+        inFrameKeyValues.forEach { frame ->
+            if (frame.key == raw.key) {
+                return frame.toCommandFrame(json, raw.json)
             }
         }
         return null
@@ -60,4 +55,5 @@ class GsonCommandProcessor(
         val json = if (delimiterIndex == -1) null else frameText.substring(delimiterIndex + 1)
         return RawCommand(key.toLowerCase(Locale.ENGLISH), json)
     }
+
 }

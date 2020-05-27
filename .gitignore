@@ -2,3 +2,4 @@
 /.gradle/
 /logger/build/
 /socket/build/
+build/

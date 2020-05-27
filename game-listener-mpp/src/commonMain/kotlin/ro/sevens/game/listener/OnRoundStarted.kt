@@ -1,4 +1,7 @@
-package ro.sevens.socket.listener
+package ro.sevens.game.listener
+
+import ro.sevens.payload.game.NewRoundResponse
+import ro.sevens.payload.game.PlayerTurnResponse
 
 /**
  * sevens-client
@@ -19,6 +22,6 @@ package ro.sevens.socket.listener
  * along with sevens-client.  If not, see [License](http://www.gnu.org/licenses/) .
  *
  */
-interface OnRoomStarted {
-    fun onRoomStarted()
+interface OnRoundStarted {
+    suspend fun onRoundStarted(response: NewRoundResponse)
 }

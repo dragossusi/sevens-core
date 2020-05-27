@@ -65,10 +65,10 @@
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
-    <orderEntry type="library" exported="" name="Gradle: kotlin-stdlib-jdk7-1.3.72" level="project" />
-    <orderEntry type="library" exported="" name="Gradle: kotlin-stdlib-1.3.72" level="project" />
-    <orderEntry type="library" exported="" name="Gradle: kotlin-stdlib-common-1.3.72" level="project" />
-    <orderEntry type="library" exported="" name="Gradle: annotations-13.0" level="project" />
+    <orderEntry type="library" exported="" scope="PROVIDED" name="Gradle: kotlin-stdlib-jdk7-1.3.72" level="project" />
+    <orderEntry type="library" exported="" scope="PROVIDED" name="Gradle: kotlin-stdlib-1.3.72" level="project" />
+    <orderEntry type="library" exported="" scope="PROVIDED" name="Gradle: kotlin-stdlib-common-1.3.72" level="project" />
+    <orderEntry type="library" exported="" scope="PROVIDED" name="Gradle: annotations-13.0" level="project" />
     <orderEntry type="library" exported="" name="Gradle: logger.logger-1.0" level="project" />
   </component>
 </module>

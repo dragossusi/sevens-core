@@ -1,6 +1,7 @@
-package ro.sevens.socket.listener
+package ro.sevens.game.listener
 
 import ro.sevens.payload.game.NewRoundResponse
+import ro.sevens.payload.game.PlayerTurnResponse
 
 /**
  * sevens-client
@@ -21,6 +22,6 @@ import ro.sevens.payload.game.NewRoundResponse
  * along with sevens-client.  If not, see [License](http://www.gnu.org/licenses/) .
  *
  */
-interface OnRoundEnded {
-    fun onRoundEnded(newRoundResponse: NewRoundResponse)
+interface OnRoundStarted {
+    suspend fun onRoundStarted(response: NewRoundResponse)
 }

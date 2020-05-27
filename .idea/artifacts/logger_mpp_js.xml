@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="jar" name="logger-mpp-js">
+    <output-path>$PROJECT_DIR$/logger-mpp/build/libs</output-path>
+    <root id="archive" name="logger-mpp-js.jar">
+      <element id="module-output" name="sevens-core.logger-mpp.jsMain" />
+    </root>
+  </artifact>
+</component>

@@ -1,6 +1,16 @@
 rootProject.name = 'sevens-core'
 include 'socket'
+include 'socket-mpp'
 include 'logger'
-include ':payload'
-project(":payload").projectDir = file("../sevens-payload/library")
+include 'logger-mpp'
+include 'game-listener'
+include 'game-listener-mpp'
+
+//payload
+//include ':payload'
+//project(":payload").projectDir = file("../sevens-payload/library")
+
+//payload mpp
+include ':payload-mpp'
+project(":payload-mpp").projectDir = file("../sevens-payload/mpp")
 

@@ -1,4 +1,4 @@
-package ro.sevens.socket.listener
+package ro.sevens.game.listener
 
 import ro.sevens.payload.game.PlayerTurnResponse
 
