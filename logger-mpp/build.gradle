@@ -32,7 +32,8 @@ kotlin {
         jvmMain {
             dependencies {
                 implementation kotlin('stdlib-jdk7')
-                implementation("org.jetbrains.kotlinx:kotlinx-serialization-runtime:0.20.0") // JVM dependency
+                implementation("org.jetbrains.kotlinx:kotlinx-serialization-runtime:$serialization_version")
+                // JVM dependency
             }
         }
 
