@@ -9,6 +9,14 @@ kotlin {
     *  To find out how to configure the targets, please follow the link:
     *  https://kotlinlang.org/docs/reference/building-mpp-with-gradle.html#setting-up-targets */
     jvm()
+    js()
+    ios() {
+        binaries {
+            framework {
+                baseName = "SevensGameListener"
+            }
+        }
+    }
     sourceSets {
         commonMain {
             dependencies {
@@ -25,6 +33,11 @@ kotlin {
         jvmMain {
             dependencies {
                 implementation kotlin('stdlib-jdk7')
+            }
+        }
+        jsMain {
+            dependencies {
+                implementation kotlin('stdlib-js')
             }
         }
     }

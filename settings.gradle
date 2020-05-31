@@ -1,9 +1,6 @@
 rootProject.name = 'sevens-core'
-include 'socket'
 include 'socket-mpp'
-include 'logger'
 include 'logger-mpp'
-include 'game-listener'
 include 'game-listener-mpp'
 
 //payload
