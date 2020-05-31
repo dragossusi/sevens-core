@@ -4,7 +4,10 @@
     <facet type="kotlin-language" name="Kotlin">
       <configuration version="3" platform="Common (experimental) " allPlatforms="JS []/JVM [1.6]/Native []" useProjectSettings="false" isTestModule="true" externalProjectId=":socket-mpp">
         <newMppModelJpsModuleKind>SOURCE_SET_HOLDER</newMppModelJpsModuleKind>
-        <externalSystemTestTasks>jvmTest|:socket-mpp:jvmTest|jvm</externalSystemTestTasks>
+        <externalSystemTestTasks>
+          <externalSystemTestTask>iosX64Test|:socket-mpp:iosX64Test|iosX64</externalSystemTestTask>
+          <externalSystemTestTask>jvmTest|:socket-mpp:jvmTest|jvm</externalSystemTestTask>
+        </externalSystemTestTasks>
         <compilerSettings />
         <compilerArguments>
           <option name="languageVersion" value="1.3" />

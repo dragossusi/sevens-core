@@ -4,7 +4,10 @@
     <facet type="kotlin-language" name="Kotlin">
       <configuration version="3" platform="Common (experimental) " allPlatforms="JS []/JVM [1.6]/Native []" useProjectSettings="false" isTestModule="true" externalProjectId=":game-listener-mpp">
         <newMppModelJpsModuleKind>SOURCE_SET_HOLDER</newMppModelJpsModuleKind>
-        <externalSystemTestTasks>jvmTest|:game-listener-mpp:jvmTest|jvm</externalSystemTestTasks>
+        <externalSystemTestTasks>
+          <externalSystemTestTask>iosX64Test|:game-listener-mpp:iosX64Test|iosX64</externalSystemTestTask>
+          <externalSystemTestTask>jvmTest|:game-listener-mpp:jvmTest|jvm</externalSystemTestTask>
+        </externalSystemTestTasks>
         <compilerSettings />
         <compilerArguments>
           <option name="languageVersion" value="1.3" />

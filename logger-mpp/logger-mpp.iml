@@ -23,6 +23,9 @@
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
+    <orderEntry type="library" exported="" name="Gradle: logger-mpp.logger-mpp-js" level="project" />
     <orderEntry type="library" exported="" name="Gradle: logger-mpp.logger-mpp-jvm" level="project" />
+    <orderEntry type="library" exported="" name="Gradle: logger-mpp.logger-mpp-metadata" level="project" />
+    <orderEntry type="library" exported="" name="Gradle: logger-mpp.logger-mpp-metadata-sources" level="project" />
   </component>
 </module>

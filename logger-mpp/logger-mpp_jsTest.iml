@@ -6,8 +6,8 @@
         <dependsOnModuleNames>:logger-mpp:commonTest</dependsOnModuleNames>
         <sourceSets>
           <sourceSet>logger-mpp_jsMain</sourceSet>
-          <sourceSet>logger-mpp_commonMain</sourceSet>
           <sourceSet>logger-mpp_commonTest</sourceSet>
+          <sourceSet>logger-mpp_commonMain</sourceSet>
         </sourceSets>
         <newMppModelJpsModuleKind>COMPILATION_AND_SOURCE_SET_HOLDER</newMppModelJpsModuleKind>
         <compilerSettings />
@@ -79,7 +79,7 @@
         <SOURCES />
       </library>
     </orderEntry>
-    <orderEntry type="module" module-name="logger-mpp_commonTest" scope="TEST" production-on-test="" />
+    <orderEntry type="module" module-name="logger-mpp_commonMain" scope="TEST" />
     <orderEntry type="module-library" scope="TEST">
       <library>
         <CLASSES>
@@ -93,7 +93,7 @@
         <SOURCES />
       </library>
     </orderEntry>
-    <orderEntry type="module" module-name="logger-mpp_commonMain" scope="TEST" />
+    <orderEntry type="module" module-name="logger-mpp_commonTest" scope="TEST" production-on-test="" />
     <orderEntry type="module-library" scope="TEST">
       <library>
         <CLASSES>

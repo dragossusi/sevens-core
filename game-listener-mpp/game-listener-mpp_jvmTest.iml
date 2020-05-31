@@ -6,8 +6,8 @@
         <dependsOnModuleNames>:game-listener-mpp:commonTest</dependsOnModuleNames>
         <sourceSets>
           <sourceSet>game-listener-mpp_jvmMain</sourceSet>
-          <sourceSet>game-listener-mpp_commonMain</sourceSet>
           <sourceSet>game-listener-mpp_commonTest</sourceSet>
+          <sourceSet>game-listener-mpp_commonMain</sourceSet>
         </sourceSets>
         <newMppModelJpsModuleKind>COMPILATION_AND_SOURCE_SET_HOLDER</newMppModelJpsModuleKind>
         <externalSystemTestTasks>jvmTest|:game-listener-mpp:jvmTest|jvm</externalSystemTestTasks>
@@ -84,7 +84,7 @@
         <SOURCES />
       </library>
     </orderEntry>
-    <orderEntry type="module" module-name="game-listener-mpp_commonTest" scope="TEST" production-on-test="" />
+    <orderEntry type="module" module-name="game-listener-mpp_commonMain" scope="TEST" />
     <orderEntry type="module-library" scope="TEST">
       <library>
         <CLASSES>
@@ -99,7 +99,7 @@
         <SOURCES />
       </library>
     </orderEntry>
-    <orderEntry type="module" module-name="game-listener-mpp_commonMain" scope="TEST" />
+    <orderEntry type="module" module-name="game-listener-mpp_commonTest" scope="TEST" production-on-test="" />
     <orderEntry type="module-library" scope="TEST">
       <library>
         <CLASSES>
