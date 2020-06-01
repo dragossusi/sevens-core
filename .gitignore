@@ -3,3 +3,6 @@
 /logger/build/
 /socket/build/
 build/
+./idea/modules
+*.iml
+artifacts/
