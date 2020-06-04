@@ -5,9 +5,9 @@
       <configuration version="3" platform="JVM 1.6" allPlatforms="JVM [1.6]" useProjectSettings="false" isTestModule="true" externalProjectId=":logger-mpp">
         <dependsOnModuleNames>:logger-mpp:commonTest</dependsOnModuleNames>
         <sourceSets>
-          <sourceSet>logger-mpp_jvmMain</sourceSet>
-          <sourceSet>logger-mpp_commonTest</sourceSet>
           <sourceSet>logger-mpp_commonMain</sourceSet>
+          <sourceSet>Sevens-logger-mpp_commonTest</sourceSet>
+          <sourceSet>logger-mpp_jvmMain</sourceSet>
         </sourceSets>
         <newMppModelJpsModuleKind>COMPILATION_AND_SOURCE_SET_HOLDER</newMppModelJpsModuleKind>
         <externalSystemTestTasks>jvmTest|:logger-mpp:jvmTest|jvm</externalSystemTestTasks>
@@ -60,7 +60,7 @@
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
-    <orderEntry type="module" module-name="logger-mpp_jvmMain" scope="TEST" />
+    <orderEntry type="module" module-name="logger-mpp_commonMain" scope="TEST" />
     <orderEntry type="library" scope="TEST" name="Gradle: org.jetbrains:annotations:13.0" level="project" />
     <orderEntry type="library" scope="TEST" name="Gradle: org.jetbrains.kotlin:kotlin-stdlib:1.3.72" level="project" />
     <orderEntry type="module-library" scope="RUNTIME">
@@ -116,8 +116,8 @@
         <SOURCES />
       </library>
     </orderEntry>
-    <orderEntry type="module" module-name="logger-mpp_commonMain" scope="TEST" />
-    <orderEntry type="module" module-name="logger-mpp_commonTest" scope="TEST" production-on-test="" />
+    <orderEntry type="module" module-name="logger-mpp_jvmMain" scope="TEST" />
+    <orderEntry type="module" module-name="Sevens-logger-mpp_commonTest" scope="TEST" production-on-test="" />
   </component>
   <component name="TestModuleProperties" production-module="logger-mpp_jvmMain" />
 </module>

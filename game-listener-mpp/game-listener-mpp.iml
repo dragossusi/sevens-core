@@ -23,9 +23,6 @@
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
-    <orderEntry type="library" exported="" name="Gradle: game-listener-mpp.game-listener-mpp-js-0.0.1" level="project" />
     <orderEntry type="library" exported="" name="Gradle: game-listener-mpp.game-listener-mpp-jvm-0.0.1" level="project" />
-    <orderEntry type="library" exported="" name="Gradle: game-listener-mpp.game-listener-mpp-metadata-0.0.1" level="project" />
-    <orderEntry type="library" exported="" name="Gradle: game-listener-mpp.game-listener-mpp-metadata-0.0.1-sources" level="project" />
   </component>
 </module>

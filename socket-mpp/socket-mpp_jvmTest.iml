@@ -5,9 +5,9 @@
       <configuration version="3" platform="JVM 1.6" allPlatforms="JVM [1.6]" useProjectSettings="false" isTestModule="true" externalProjectId=":socket-mpp">
         <dependsOnModuleNames>:socket-mpp:commonTest</dependsOnModuleNames>
         <sourceSets>
+          <sourceSet>Sevens-socket-mpp_commonTest</sourceSet>
           <sourceSet>socket-mpp_commonMain</sourceSet>
           <sourceSet>socket-mpp_jvmMain</sourceSet>
-          <sourceSet>socket-mpp_commonTest</sourceSet>
         </sourceSets>
         <newMppModelJpsModuleKind>COMPILATION_AND_SOURCE_SET_HOLDER</newMppModelJpsModuleKind>
         <externalSystemTestTasks>jvmTest|:socket-mpp:jvmTest|jvm</externalSystemTestTasks>
@@ -84,9 +84,9 @@
         <SOURCES />
       </library>
     </orderEntry>
-    <orderEntry type="module" module-name="socket-mpp_commonTest" scope="TEST" production-on-test="" />
     <orderEntry type="module" module-name="socket-mpp_jvmMain" scope="TEST" />
     <orderEntry type="module" module-name="socket-mpp_commonMain" scope="TEST" />
+    <orderEntry type="module" module-name="Sevens-socket-mpp_commonTest" scope="TEST" production-on-test="" />
     <orderEntry type="module-library" scope="TEST">
       <library>
         <CLASSES>
