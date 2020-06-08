@@ -24,6 +24,7 @@ kotlin {
             }
         }
     }
+    linuxX64()
 
     sourceSets {
         commonMain {
@@ -53,6 +54,11 @@ kotlin {
             }
         }
         iosMain {
+            dependencies {
+                implementation "org.jetbrains.kotlinx:kotlinx-serialization-runtime-native:$serialization_version"
+            }
+        }
+        linuxX64Main {
             dependencies {
                 implementation "org.jetbrains.kotlinx:kotlinx-serialization-runtime-native:$serialization_version"
             }
