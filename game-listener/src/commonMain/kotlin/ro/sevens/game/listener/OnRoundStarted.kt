@@ -21,6 +21,8 @@ import ro.sevens.payload.game.NewRoundResponse
  * along with sevens-client.  If not, see [License](http://www.gnu.org/licenses/) .
  *
  */
-interface OnRoundStarted {
-    fun onRoundStarted(response: NewRoundResponse)
-}
+typealias OnRoundStarted = (response: NewRoundResponse) -> Unit
+
+//interface OnRoundStarted {
+//    fun onRoundStarted(response: NewRoundResponse)
+//}
