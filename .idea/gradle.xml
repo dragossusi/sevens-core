@@ -9,10 +9,10 @@
         <option name="modules">
           <set>
             <option value="$PROJECT_DIR$" />
-            <option value="$PROJECT_DIR$/game-listener-mpp" />
-            <option value="$PROJECT_DIR$/logger-mpp" />
-            <option value="$PROJECT_DIR$/socket-mpp" />
-            <option value="$PROJECT_DIR$/../sevens-payload/mpp" />
+            <option value="$PROJECT_DIR$/game-listener" />
+            <option value="$PROJECT_DIR$/logger" />
+            <option value="$PROJECT_DIR$/socket" />
+            <option value="$PROJECT_DIR$/../sevens-payload/payload" />
           </set>
         </option>
         <option name="useQualifiedModuleNames" value="true" />

@@ -1,13 +1,9 @@
 rootProject.name = 'sevens-core'
-include 'socket-mpp'
-include 'logger-mpp'
-include 'game-listener-mpp'
+include 'socket'
+include 'logger'
+include 'game-listener'
 
 //payload
-//include ':payload'
-//project(":payload").projectDir = file("../sevens-payload/library")
-
-//payload mpp
-include ':payload-mpp'
-project(":payload-mpp").projectDir = file("../sevens-payload/mpp")
+include ':payload'
+project(":payload").projectDir = file("../sevens-payload/payload")
 

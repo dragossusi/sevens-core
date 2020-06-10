@@ -2,8 +2,20 @@
 <project version="4">
   <component name="CompilerConfiguration">
     <bytecodeTargetLevel target="1.8">
+      <module name="sevens-core.game-listener-mpp.commonMain" target="1.6" />
+      <module name="sevens-core.game-listener-mpp.commonTest" target="1.6" />
+      <module name="sevens-core.game-listener-mpp.jvmMain" target="1.6" />
+      <module name="sevens-core.game-listener-mpp.jvmTest" target="1.6" />
+      <module name="sevens-core.logger-mpp.commonMain" target="1.6" />
+      <module name="sevens-core.logger-mpp.commonTest" target="1.6" />
+      <module name="sevens-core.logger-mpp.jvmMain" target="1.6" />
+      <module name="sevens-core.logger-mpp.jvmTest" target="1.6" />
       <module name="sevens-core.payload-mpp.jvmMain" target="1.6" />
       <module name="sevens-core.payload-mpp.jvmTest" target="1.6" />
+      <module name="sevens-core.socket-mpp.commonMain" target="1.6" />
+      <module name="sevens-core.socket-mpp.commonTest" target="1.6" />
+      <module name="sevens-core.socket-mpp.jvmMain" target="1.6" />
+      <module name="sevens-core.socket-mpp.jvmTest" target="1.6" />
     </bytecodeTargetLevel>
   </component>
 </project>
