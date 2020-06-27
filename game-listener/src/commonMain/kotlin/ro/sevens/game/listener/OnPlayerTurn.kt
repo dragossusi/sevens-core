@@ -21,8 +21,8 @@ import ro.sevens.payload.game.PlayerTurnResponse
  * along with sevens-client.  If not, see [License](http://www.gnu.org/licenses/) .
  *
  */
-typealias OnPlayerTurn = (playerTurn: PlayerTurnResponse) -> Unit
+//typealias OnPlayerTurn = (playerTurn: PlayerTurnResponse) -> Unit
 
-//interface OnPlayerTurn {
-//    fun onPlayerTurn(playerTurn: PlayerTurnResponse)
-//}
+fun interface OnPlayerTurn {
+    fun onPlayerTurn(playerTurn: PlayerTurnResponse)
+}

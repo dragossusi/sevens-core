@@ -1,6 +1,6 @@
 package ro.sevens.game.listener
 
-import ro.sevens.payload.game.NewRoundResponse
+import ro.sevens.payload.game.GameEndResponse
 
 /**
  * sevens-client
@@ -21,8 +21,9 @@ import ro.sevens.payload.game.NewRoundResponse
  * along with sevens-client.  If not, see [License](http://www.gnu.org/licenses/) .
  *
  */
-//typealias OnRoundStarted = (response: NewRoundResponse) -> Unit
 
-fun interface OnRoundStarted {
-    fun onRoundStarted(response: NewRoundResponse)
+//typealias OnRoomStopped = ()->Unit
+
+fun interface OnGameEnded {
+    fun onGameEnded(response: GameEndResponse)
 }

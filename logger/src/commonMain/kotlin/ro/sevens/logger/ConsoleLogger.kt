@@ -1,6 +1,4 @@
-package ro.sevens.game.listener
-
-import ro.sevens.payload.game.NewRoundResponse
+package ro.sevens.logger
 
 /**
  * sevens-client
@@ -21,8 +19,26 @@ import ro.sevens.payload.game.NewRoundResponse
  * along with sevens-client.  If not, see [License](http://www.gnu.org/licenses/) .
  *
  */
-//typealias OnRoundStarted = (response: NewRoundResponse) -> Unit
+class ConsoleLogger(private val tag: String) : TagLogger {
 
-fun interface OnRoundStarted {
-    fun onRoundStarted(response: NewRoundResponse)
+    override fun i(message: String) {
+        println("$tag/I: $message")
+    }
+
+    override fun d(message: String) {
+        println("$tag/D: $message")
+    }
+
+    override fun e(message: String) {
+        println("$tag/E: $message")
+    }
+
+    override fun e(throwable: Throwable) {
+        println("$tag/E: $throwable")
+    }
+
+    override fun w(message: String) {
+        println("$tag/W: $message")
+    }
+
 }

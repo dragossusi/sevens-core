@@ -3,6 +3,8 @@ package ro.sevens.socket.command
 import kotlinx.serialization.KSerializer
 import kotlinx.serialization.SerialName
 import kotlinx.serialization.builtins.serializer
+import ro.sevens.payload.game.GameEndResponse
+import ro.sevens.payload.game.GameStartedResponse
 import ro.sevens.payload.game.NewRoundResponse
 import ro.sevens.payload.game.PlayerTurnResponse
 
@@ -44,7 +46,10 @@ sealed class ClientFrameKey<T>(
             CONNECTED_ROOM,
             NEW_ROUND,
             PLAYER_TURN,
-            ROOM_STOP
+            END_ROUND,
+            ROOM_STOP,
+            GAME_STARTED,
+            GAME_ENDED
         )
     }
 
@@ -56,6 +61,13 @@ sealed class ClientFrameKey<T>(
 
     @SerialName("new_round")
     object NEW_ROUND : ClientFrameKey<NewRoundResponse>("new_round", NewRoundResponse.serializer())
+
+    @SerialName("game_started")
+    object GAME_STARTED :
+        ClientFrameKey<GameStartedResponse>("game_started", GameStartedResponse.serializer())
+
+    @SerialName("game_ended")
+    object GAME_ENDED : ClientFrameKey<GameEndResponse>("game_ended", GameEndResponse.serializer())
 
     @SerialName("end_round")
     object END_ROUND : ClientFrameKey<NewRoundResponse>("end_round", NewRoundResponse.serializer())

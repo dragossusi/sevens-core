@@ -19,8 +19,8 @@ package ro.sevens.game.listener
  * along with sevens-client.  If not, see [License](http://www.gnu.org/licenses/) .
  *
  */
-typealias OnRoomConnected = (id: Long)->Unit
+//typealias OnRoomConnected = (id: Long)->Unit
 
-//interface OnRoomConnected {
-//    fun onRoomConnected(id: Long)
-//}
+fun interface OnRoomConnected {
+   fun onRoomConnected(id: Long)
+}

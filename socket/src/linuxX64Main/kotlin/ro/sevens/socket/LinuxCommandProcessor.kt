@@ -2,6 +2,8 @@ package ro.sevens.socket
 
 import kotlinx.serialization.json.Json
 import kotlinx.serialization.json.JsonConfiguration
+import ro.sevens.socket.command.ClientFrameKey
+import ro.sevens.socket.command.ServerFrameKey
 import ro.sevens.socket.processor.JsonCommandProcessor
 
 /**
@@ -24,7 +26,9 @@ import ro.sevens.socket.processor.JsonCommandProcessor
  *
  */
 class LinuxCommandProcessor : JsonCommandProcessor(
-        Json(JsonConfiguration.Stable),
-        SocketCommandLogger
+    Json(JsonConfiguration.Stable),
+    SocketCommandLogger,
+    ClientFrameKey.values(),
+    ServerFrameKey.values()
 ) {
 }

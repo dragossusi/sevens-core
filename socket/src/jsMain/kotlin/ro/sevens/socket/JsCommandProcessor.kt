@@ -1,6 +1,10 @@
-package ro.sevens.game.listener
+package ro.sevens.socket
 
-import ro.sevens.payload.game.NewRoundResponse
+import kotlinx.serialization.json.Json
+import kotlinx.serialization.json.JsonConfiguration
+import ro.sevens.socket.command.ClientFrameKey
+import ro.sevens.socket.command.ServerFrameKey
+import ro.sevens.socket.processor.JsonCommandProcessor
 
 /**
  * sevens-client
@@ -21,8 +25,10 @@ import ro.sevens.payload.game.NewRoundResponse
  * along with sevens-client.  If not, see [License](http://www.gnu.org/licenses/) .
  *
  */
-//typealias OnRoundStarted = (response: NewRoundResponse) -> Unit
-
-fun interface OnRoundStarted {
-    fun onRoundStarted(response: NewRoundResponse)
+class JsCommandProcessor : JsonCommandProcessor(
+        Json(JsonConfiguration.Stable),
+        SocketCommandLogger,
+        ServerFrameKey.values(),
+        ClientFrameKey.values()
+) {
 }

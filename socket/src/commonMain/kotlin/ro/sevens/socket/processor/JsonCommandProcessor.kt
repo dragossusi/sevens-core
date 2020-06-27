@@ -3,7 +3,9 @@ package ro.sevens.socket.processor
 import kotlinx.serialization.json.Json
 import ro.sevens.logger.TagLogger
 import ro.sevens.socket.CommandFrame
-import ro.sevens.socket.command.*
+import ro.sevens.socket.command.FrameKey
+import ro.sevens.socket.command.RawCommand
+import ro.sevens.socket.command.toCommandFrame
 
 /**
  * server
@@ -24,12 +26,12 @@ import ro.sevens.socket.command.*
  * along with server.  If not, see [License](http://www.gnu.org/licenses/) .
  *
  */
-open class JsonCommandProcessor(
-        private val json: Json,
-        private val tagLogger: TagLogger
+open class JsonCommandProcessor constructor(
+    private val json: Json,
+    private val tagLogger: TagLogger,
+    private val inFrameKeyValues: Array<out FrameKey<*>>,
+    private val outFrameKeyValues: Array<out FrameKey<*>>
 ) : CommandProcessor {
-    private val inFrameKeyValues: Array<out FrameKey<*>> = ClientFrameKey.values()
-    private val outFrameKeyValues: Array<out FrameKey<*>> = ServerFrameKey.values()
 
     override fun <T> process(command: CommandFrame<T>): String {
         return "${command.key.key}:${command.toJson(json)}"
