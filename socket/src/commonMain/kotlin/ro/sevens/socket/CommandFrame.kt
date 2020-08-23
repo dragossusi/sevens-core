@@ -1,6 +1,7 @@
 package ro.sevens.socket
 
 import kotlinx.serialization.json.Json
+import kotlinx.serialization.stringify
 import ro.sevens.socket.command.FrameKey
 
 /**
@@ -28,7 +29,7 @@ data class CommandFrame<T>(
 ) {
     fun toJson(json: Json): String? {
         return data?.let {
-            json.stringify(key.serializer!!, it)
+            json.encodeToString<T>(key.serializer!!, it)
         }
     }
 }

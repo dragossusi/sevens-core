@@ -1,8 +1,0 @@
-<component name="ArtifactManager">
-  <artifact type="jar" name="socket-mpp-jvm">
-    <output-path>$PROJECT_DIR$/socket-mpp/build/libs</output-path>
-    <root id="archive" name="socket-mpp-jvm.jar">
-      <element id="module-output" name="sevens-core.socket-mpp.jvmMain" />
-    </root>
-  </artifact>
-</component>

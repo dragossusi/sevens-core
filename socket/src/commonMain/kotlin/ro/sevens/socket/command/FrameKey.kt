@@ -2,6 +2,7 @@ package ro.sevens.socket.command
 
 import kotlinx.serialization.KSerializer
 import kotlinx.serialization.json.Json
+import kotlinx.serialization.parse
 import ro.sevens.socket.CommandFrame
 
 /**
@@ -32,7 +33,7 @@ interface FrameKey<T> {
 fun <T> FrameKey<T>.read(json: Json, jsonString: String?): T? {
     return jsonString?.let { string ->
         serializer?.let {
-            json.parse(it, string)
+            json.decodeFromString(it, string)
         }
     }
 }

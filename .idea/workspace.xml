@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="dcb902b0-9808-4eda-b540-8a52b86d3e0b" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/artifacts/logger_mpp_js.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/artifacts/logger_mpp_jvm.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/artifacts/payload_mpp_js_0_0_1.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/artifacts/payload_mpp_jvm_0_0_1.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/artifacts/socket_mpp_js.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/artifacts/socket_mpp_jvm.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dbnavigator.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dbnavigator.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/game-listener/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/game-listener/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/logger/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/logger/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/socket/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/socket/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/socket/src/commonMain/kotlin/ro/sevens/socket/CommandFrame.kt" beforeDir="false" afterPath="$PROJECT_DIR$/socket/src/commonMain/kotlin/ro/sevens/socket/CommandFrame.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/socket/src/commonMain/kotlin/ro/sevens/socket/command/FrameKey.kt" beforeDir="false" afterPath="$PROJECT_DIR$/socket/src/commonMain/kotlin/ro/sevens/socket/command/FrameKey.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/socket/src/jsMain/kotlin/ro/sevens/socket/JsCommandProcessor.kt" beforeDir="false" afterPath="$PROJECT_DIR$/socket/src/jsMain/kotlin/ro/sevens/socket/JsCommandProcessor.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/socket/src/jvmMain/kotlin/ro/sevens/socket/JavaCommandProcessor.kt" beforeDir="false" afterPath="$PROJECT_DIR$/socket/src/jvmMain/kotlin/ro/sevens/socket/JavaCommandProcessor.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/socket/src/linuxX64Main/kotlin/ro/sevens/socket/LinuxCommandProcessor.kt" beforeDir="false" afterPath="$PROJECT_DIR$/socket/src/linuxX64Main/kotlin/ro/sevens/socket/LinuxCommandProcessor.kt" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ExternalProjectsData">
+    <projectState path="$PROJECT_DIR$">
+      <ProjectState />
+    </projectState>
+  </component>
+  <component name="ExternalProjectsManager">
+    <system id="GRADLE">
+      <state>
+        <task path="$PROJECT_DIR$">
+          <activation />
+        </task>
+        <projects_view>
+          <tree_state>
+            <expand>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="sevens-core" type="f1a62948:ProjectNode" />
+              </path>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="sevens-core" type="f1a62948:ProjectNode" />
+                <item name="Tasks" type="e4a08cd1:TasksNode" />
+              </path>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="sevens-core" type="f1a62948:ProjectNode" />
+                <item name="Tasks" type="e4a08cd1:TasksNode" />
+                <item name="build" type="c8890929:TasksNode$1" />
+              </path>
+            </expand>
+            <select />
+          </tree_state>
+        </projects_view>
+      </state>
+    </system>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="ProjectId" id="1gVb2Ox3bWc4iQLpwgajgfDL8wP" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="show.unlinked.gradle.project.popup" value="true" />
+  </component>
+  <component name="RunManager">
+    <configuration name="sevens-core [build]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value="build" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <GradleScriptDebugEnabled>true</GradleScriptDebugEnabled>
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Gradle.sevens-core [build]" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="dcb902b0-9808-4eda-b540-8a52b86d3e0b" name="Default Changelist" comment="" />
+      <created>1598202498089</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1598202498089</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="WindowStateProjectService">
+    <state width="1874" height="280" key="GridCell.Tab.0.bottom" timestamp="1598202851190">
+      <screen x="0" y="0" width="1920" height="1048" />
+    </state>
+    <state width="1874" height="280" key="GridCell.Tab.0.bottom/0.0.1920.1048@0.0.1920.1048" timestamp="1598202851190" />
+    <state width="1874" height="280" key="GridCell.Tab.0.center" timestamp="1598202851190">
+      <screen x="0" y="0" width="1920" height="1048" />
+    </state>
+    <state width="1874" height="280" key="GridCell.Tab.0.center/0.0.1920.1048@0.0.1920.1048" timestamp="1598202851190" />
+    <state width="1874" height="280" key="GridCell.Tab.0.left" timestamp="1598202851190">
+      <screen x="0" y="0" width="1920" height="1048" />
+    </state>
+    <state width="1874" height="280" key="GridCell.Tab.0.left/0.0.1920.1048@0.0.1920.1048" timestamp="1598202851190" />
+    <state width="1874" height="280" key="GridCell.Tab.0.right" timestamp="1598202851190">
+      <screen x="0" y="0" width="1920" height="1048" />
+    </state>
+    <state width="1874" height="280" key="GridCell.Tab.0.right/0.0.1920.1048@0.0.1920.1048" timestamp="1598202851190" />
+  </component>
+</project>
