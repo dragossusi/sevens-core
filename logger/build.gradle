@@ -1,13 +1,11 @@
 plugins {
     id 'org.jetbrains.kotlin.multiplatform'// version "$kotlin_version"
     id 'org.jetbrains.kotlin.plugin.serialization'// version "$kotlin_version"
+    id 'maven-publish'
 }
 
-version 'unspecified'
-
-repositories {
-    mavenCentral()
-}
+group 'ro.sevens'
+version '0.0.1'
 
 kotlin {
     /* Targets configuration omitted. 
@@ -30,8 +28,7 @@ kotlin {
         commonMain {
             dependencies {
                 implementation kotlin('stdlib-common')
-                implementation "org.jetbrains.kotlinx:kotlinx-serialization-core:$serialization_version"
-                implementation "org.jetbrains.kotlinx:kotlinx-serialization-protobuf:$serialization_version"
+                implementation "org.jetbrains.kotlinx:kotlinx-serialization-json:$serialization_version"
             }
         }
         commonTest {

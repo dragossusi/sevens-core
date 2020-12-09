@@ -1,7 +1,6 @@
 package ro.sevens.socket
 
 import kotlinx.serialization.json.Json
-import kotlinx.serialization.stringify
 import ro.sevens.socket.command.FrameKey
 
 /**

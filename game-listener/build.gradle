@@ -1,7 +1,9 @@
 plugins {
     id 'org.jetbrains.kotlin.multiplatform'// version "$kotlin_version"
+    id 'maven-publish'
 }
 
+group 'ro.sevens'
 version '0.0.1'
 
 kotlin {

@@ -38,6 +38,12 @@ sealed class ServerFrameKey<T>(
     @SerialName("place")
     object PLACE : ServerFrameKey<Card>("place", Card.serializer())
 
+    @SerialName("draw")
+    object DRAW : ServerFrameKey<Nothing>("draw", null)
+
+    @SerialName("pick")
+    object pick : ServerFrameKey<Card.Type>("pick", Card.Type.serializer())
+
     @SerialName("end")
     object END : ServerFrameKey<Nothing>("end", null)
 

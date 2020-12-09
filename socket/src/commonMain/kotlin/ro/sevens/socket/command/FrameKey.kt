@@ -2,7 +2,6 @@ package ro.sevens.socket.command
 
 import kotlinx.serialization.KSerializer
 import kotlinx.serialization.json.Json
-import kotlinx.serialization.parse
 import ro.sevens.socket.CommandFrame
 
 /**

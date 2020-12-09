@@ -1,6 +1,10 @@
 plugins {
     id 'org.jetbrains.kotlin.multiplatform'
+    id 'maven-publish'
 }
+
+group 'ro.sevens'
+version '0.0.1'
 
 kotlin {
     /* Targets configuration omitted. 
@@ -23,8 +27,7 @@ kotlin {
             dependencies {
                 implementation kotlin('stdlib-common')
                 implementation "org.jetbrains.kotlinx:kotlinx-coroutines-core:$coroutines_version"
-                implementation "org.jetbrains.kotlinx:kotlinx-serialization-core:$serialization_version"
-                implementation "org.jetbrains.kotlinx:kotlinx-serialization-protobuf:$serialization_version"
+                implementation "org.jetbrains.kotlinx:kotlinx-serialization-json:$serialization_version"
                 implementation project(":payload")
                 implementation project(":logger")
             }
