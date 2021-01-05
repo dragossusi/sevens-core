@@ -4,55 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="dcb902b0-9808-4eda-b540-8a52b86d3e0b" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/buildSrc/src/main/kotlin/PublishPlugin.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/settings.gradle.kts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/socket/build.gradle.kts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dbnavigator.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dbnavigator.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/jarRepositories.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/jarRepositories.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+    <list default="true" id="dcb902b0-9808-4eda-b540-8a52b86d3e0b" name="Default Changelist" comment="Fixed publishing">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle.kts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/game-listener/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/game-listener/build.gradle.kts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/game-listener/src/commonMain/kotlin/ro/sevens/game/listener/OnGameEnded.kt" beforeDir="false" afterPath="$PROJECT_DIR$/game-listener/src/commonMain/kotlin/ro/dragossusi/sevens/game/listener/OnGameEnded.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/game-listener/src/commonMain/kotlin/ro/sevens/game/listener/OnGameStarted.kt" beforeDir="false" afterPath="$PROJECT_DIR$/game-listener/src/commonMain/kotlin/ro/dragossusi/sevens/game/listener/OnGameStarted.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/game-listener/src/commonMain/kotlin/ro/sevens/game/listener/OnPlayerTurn.kt" beforeDir="false" afterPath="$PROJECT_DIR$/game-listener/src/commonMain/kotlin/ro/dragossusi/sevens/game/listener/OnPlayerTurn.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/game-listener/src/commonMain/kotlin/ro/sevens/game/listener/OnRoomConnected.kt" beforeDir="false" afterPath="$PROJECT_DIR$/game-listener/src/commonMain/kotlin/ro/dragossusi/sevens/game/listener/OnRoomConnected.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/game-listener/src/commonMain/kotlin/ro/sevens/game/listener/OnRoomStarted.kt" beforeDir="false" afterPath="$PROJECT_DIR$/game-listener/src/commonMain/kotlin/ro/dragossusi/sevens/game/listener/OnRoomStarted.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/game-listener/src/commonMain/kotlin/ro/sevens/game/listener/OnRoomStopped.kt" beforeDir="false" afterPath="$PROJECT_DIR$/game-listener/src/commonMain/kotlin/ro/dragossusi/sevens/game/listener/OnRoomStopped.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/game-listener/src/commonMain/kotlin/ro/sevens/game/listener/OnRoundEnded.kt" beforeDir="false" afterPath="$PROJECT_DIR$/game-listener/src/commonMain/kotlin/ro/dragossusi/sevens/game/listener/OnRoundEnded.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/game-listener/src/commonMain/kotlin/ro/sevens/game/listener/OnRoundStarted.kt" beforeDir="false" afterPath="$PROJECT_DIR$/game-listener/src/commonMain/kotlin/ro/dragossusi/sevens/game/listener/OnRoundStarted.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/gradle.properties" beforeDir="false" afterPath="$PROJECT_DIR$/gradle.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.properties" beforeDir="false" afterPath="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/logger/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/logger/build.gradle.kts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/logger/src/commonMain/kotlin/ro/sevens/logger/ConsoleLogger.kt" beforeDir="false" afterPath="$PROJECT_DIR$/logger/src/commonMain/kotlin/ro/dragossusi/logger/ConsoleLogger.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/logger/src/commonMain/kotlin/ro/sevens/logger/TagLogger.kt" beforeDir="false" afterPath="$PROJECT_DIR$/logger/src/commonMain/kotlin/ro/dragossusi/logger/TagLogger.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/logger/src/iosMain/kotlin/ro/sevens/logger/IosLogger.kt" beforeDir="false" afterPath="$PROJECT_DIR$/logger/src/iosMain/kotlin/ro/sevens/logger/IosLogger.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/logger/src/jsMain/kotlin/ro.sevens.logger/JsLogger.kt" beforeDir="false" afterPath="$PROJECT_DIR$/logger/src/jsMain/kotlin/ro/dragossusi/logger/JsLogger.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/logger/src/jvmMain/kotlin/ro/sevens/logger/JavaLogger.kt" beforeDir="false" afterPath="$PROJECT_DIR$/logger/src/jvmMain/kotlin/ro/dragossusi/logger/JavaLogger.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/logger/src/linuxX64Main/kotlin/ro/sevens/logger/LinuxLogger.kt" beforeDir="false" afterPath="$PROJECT_DIR$/logger/src/linuxX64Main/kotlin/ro/dragossusi/sevens/logger/LinuxLogger.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/settings.gradle" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/socket/build.gradle" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/socket/src/commonMain/kotlin/ro/sevens/socket/CommandFrame.kt" beforeDir="false" afterPath="$PROJECT_DIR$/socket/src/commonMain/kotlin/ro/dragossusi/sevens/socket/CommandFrame.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/socket/src/commonMain/kotlin/ro/sevens/socket/SocketCommandLogger.kt" beforeDir="false" afterPath="$PROJECT_DIR$/socket/src/commonMain/kotlin/ro/dragossusi/sevens/socket/SocketCommandLogger.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/socket/src/commonMain/kotlin/ro/sevens/socket/command/ClientFrameKey.kt" beforeDir="false" afterPath="$PROJECT_DIR$/socket/src/commonMain/kotlin/ro/dragossusi/sevens/socket/command/ClientFrameKey.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/socket/src/commonMain/kotlin/ro/sevens/socket/command/FrameKey.kt" beforeDir="false" afterPath="$PROJECT_DIR$/socket/src/commonMain/kotlin/ro/dragossusi/sevens/socket/command/FrameKey.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/socket/src/commonMain/kotlin/ro/sevens/socket/command/RawCommand.kt" beforeDir="false" afterPath="$PROJECT_DIR$/socket/src/commonMain/kotlin/ro/dragossusi/sevens/socket/command/RawCommand.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/socket/src/commonMain/kotlin/ro/sevens/socket/command/ServerFrameKey.kt" beforeDir="false" afterPath="$PROJECT_DIR$/socket/src/commonMain/kotlin/ro/dragossusi/sevens/socket/command/ServerFrameKey.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/socket/src/commonMain/kotlin/ro/sevens/socket/processor/CommandProcessor.kt" beforeDir="false" afterPath="$PROJECT_DIR$/socket/src/commonMain/kotlin/ro/dragossusi/sevens/socket/processor/CommandProcessor.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/socket/src/commonMain/kotlin/ro/sevens/socket/processor/JsonCommandProcessor.kt" beforeDir="false" afterPath="$PROJECT_DIR$/socket/src/commonMain/kotlin/ro/dragossusi/sevens/socket/processor/JsonCommandProcessor.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/socket/src/iosMain/kotlin/ro/sevens/socket/IosCommandProcessor.kt" beforeDir="false" afterPath="$PROJECT_DIR$/socket/src/iosMain/kotlin/ro/dragossusi/sevens/socket/IosCommandProcessor.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/socket/src/iosMain/kotlin/ro/sevens/socket/SocketCommandLogger.kt" beforeDir="false" afterPath="$PROJECT_DIR$/socket/src/iosMain/kotlin/ro/dragossusi/sevens/socket/SocketCommandLogger.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/socket/src/jsMain/kotlin/ro/sevens/socket/JsCommandProcessor.kt" beforeDir="false" afterPath="$PROJECT_DIR$/socket/src/jsMain/kotlin/ro/dragossusi/sevens/socket/JsCommandProcessor.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/socket/src/jsMain/kotlin/ro/sevens/socket/SocketCommandLogger.kt" beforeDir="false" afterPath="$PROJECT_DIR$/socket/src/jsMain/kotlin/ro/dragossusi/sevens/socket/SocketCommandLogger.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/socket/src/jvmMain/kotlin/ro/sevens/socket/JavaCommandProcessor.kt" beforeDir="false" afterPath="$PROJECT_DIR$/socket/src/jvmMain/kotlin/ro/dragossusi/sevens/socket/JavaCommandProcessor.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/socket/src/jvmMain/kotlin/ro/sevens/socket/SocketCommandLogger.kt" beforeDir="false" afterPath="$PROJECT_DIR$/socket/src/jvmMain/kotlin/ro/dragossusi/sevens/socket/SocketCommandLogger.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/socket/src/linuxX64Main/kotlin/ro/sevens/socket/LinuxCommandProcessor.kt" beforeDir="false" afterPath="$PROJECT_DIR$/socket/src/linuxX64Main/kotlin/ro/dragossusi/sevens/socket/LinuxCommandProcessor.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/socket/src/linuxX64Main/kotlin/ro/sevens/socket/SocketCommandLogger.kt" beforeDir="false" afterPath="$PROJECT_DIR$/socket/src/linuxX64Main/kotlin/ro/dragossusi/sevens/socket/SocketCommandLogger.kt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -123,10 +76,13 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../sevens-payload" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/buildSrc/src/main/kotlin" />
     <property name="show.unlinked.gradle.project.popup" value="true" />
   </component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/buildSrc/src/main/kotlin" />
+    </key>
     <key name="CopyKotlinDeclarationDialog.RECENTS_KEY">
       <recent name="" />
     </key>
@@ -263,7 +219,14 @@
       <option name="project" value="LOCAL" />
       <updated>1598202975891</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Fixed publishing">
+      <created>1609850570781</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1609850570781</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -280,6 +243,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Updated kotlin version" />
-    <option name="LAST_COMMIT_MESSAGE" value="Updated kotlin version" />
+    <MESSAGE value="Fixed publishing" />
+    <option name="LAST_COMMIT_MESSAGE" value="Fixed publishing" />
   </component>
 </project>
