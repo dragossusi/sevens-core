@@ -1,28 +1,58 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
   <component name="ChangeListManager">
     <list default="true" id="dcb902b0-9808-4eda-b540-8a52b86d3e0b" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/artifacts/logger_mpp_js.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/artifacts/logger_mpp_jvm.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/artifacts/payload_mpp_js_0_0_1.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/artifacts/payload_mpp_jvm_0_0_1.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/artifacts/socket_mpp_js.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/artifacts/socket_mpp_jvm.xml" beforeDir="false" />
+      <change afterPath="$PROJECT_DIR$/buildSrc/src/main/kotlin/PublishPlugin.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/settings.gradle.kts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/socket/build.gradle.kts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/dbnavigator.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dbnavigator.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/jarRepositories.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/jarRepositories.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/game-listener/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/game-listener/build.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/logger/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/logger/build.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/socket/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/socket/build.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/socket/src/commonMain/kotlin/ro/sevens/socket/CommandFrame.kt" beforeDir="false" afterPath="$PROJECT_DIR$/socket/src/commonMain/kotlin/ro/sevens/socket/CommandFrame.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/socket/src/commonMain/kotlin/ro/sevens/socket/command/FrameKey.kt" beforeDir="false" afterPath="$PROJECT_DIR$/socket/src/commonMain/kotlin/ro/sevens/socket/command/FrameKey.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/socket/src/jsMain/kotlin/ro/sevens/socket/JsCommandProcessor.kt" beforeDir="false" afterPath="$PROJECT_DIR$/socket/src/jsMain/kotlin/ro/sevens/socket/JsCommandProcessor.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/socket/src/jvmMain/kotlin/ro/sevens/socket/JavaCommandProcessor.kt" beforeDir="false" afterPath="$PROJECT_DIR$/socket/src/jvmMain/kotlin/ro/sevens/socket/JavaCommandProcessor.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/socket/src/linuxX64Main/kotlin/ro/sevens/socket/LinuxCommandProcessor.kt" beforeDir="false" afterPath="$PROJECT_DIR$/socket/src/linuxX64Main/kotlin/ro/sevens/socket/LinuxCommandProcessor.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle.kts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/game-listener/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/game-listener/build.gradle.kts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/game-listener/src/commonMain/kotlin/ro/sevens/game/listener/OnGameEnded.kt" beforeDir="false" afterPath="$PROJECT_DIR$/game-listener/src/commonMain/kotlin/ro/dragossusi/sevens/game/listener/OnGameEnded.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/game-listener/src/commonMain/kotlin/ro/sevens/game/listener/OnGameStarted.kt" beforeDir="false" afterPath="$PROJECT_DIR$/game-listener/src/commonMain/kotlin/ro/dragossusi/sevens/game/listener/OnGameStarted.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/game-listener/src/commonMain/kotlin/ro/sevens/game/listener/OnPlayerTurn.kt" beforeDir="false" afterPath="$PROJECT_DIR$/game-listener/src/commonMain/kotlin/ro/dragossusi/sevens/game/listener/OnPlayerTurn.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/game-listener/src/commonMain/kotlin/ro/sevens/game/listener/OnRoomConnected.kt" beforeDir="false" afterPath="$PROJECT_DIR$/game-listener/src/commonMain/kotlin/ro/dragossusi/sevens/game/listener/OnRoomConnected.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/game-listener/src/commonMain/kotlin/ro/sevens/game/listener/OnRoomStarted.kt" beforeDir="false" afterPath="$PROJECT_DIR$/game-listener/src/commonMain/kotlin/ro/dragossusi/sevens/game/listener/OnRoomStarted.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/game-listener/src/commonMain/kotlin/ro/sevens/game/listener/OnRoomStopped.kt" beforeDir="false" afterPath="$PROJECT_DIR$/game-listener/src/commonMain/kotlin/ro/dragossusi/sevens/game/listener/OnRoomStopped.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/game-listener/src/commonMain/kotlin/ro/sevens/game/listener/OnRoundEnded.kt" beforeDir="false" afterPath="$PROJECT_DIR$/game-listener/src/commonMain/kotlin/ro/dragossusi/sevens/game/listener/OnRoundEnded.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/game-listener/src/commonMain/kotlin/ro/sevens/game/listener/OnRoundStarted.kt" beforeDir="false" afterPath="$PROJECT_DIR$/game-listener/src/commonMain/kotlin/ro/dragossusi/sevens/game/listener/OnRoundStarted.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gradle.properties" beforeDir="false" afterPath="$PROJECT_DIR$/gradle.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.properties" beforeDir="false" afterPath="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/logger/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/logger/build.gradle.kts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/logger/src/commonMain/kotlin/ro/sevens/logger/ConsoleLogger.kt" beforeDir="false" afterPath="$PROJECT_DIR$/logger/src/commonMain/kotlin/ro/dragossusi/logger/ConsoleLogger.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/logger/src/commonMain/kotlin/ro/sevens/logger/TagLogger.kt" beforeDir="false" afterPath="$PROJECT_DIR$/logger/src/commonMain/kotlin/ro/dragossusi/logger/TagLogger.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/logger/src/iosMain/kotlin/ro/sevens/logger/IosLogger.kt" beforeDir="false" afterPath="$PROJECT_DIR$/logger/src/iosMain/kotlin/ro/sevens/logger/IosLogger.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/logger/src/jsMain/kotlin/ro.sevens.logger/JsLogger.kt" beforeDir="false" afterPath="$PROJECT_DIR$/logger/src/jsMain/kotlin/ro/dragossusi/logger/JsLogger.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/logger/src/jvmMain/kotlin/ro/sevens/logger/JavaLogger.kt" beforeDir="false" afterPath="$PROJECT_DIR$/logger/src/jvmMain/kotlin/ro/dragossusi/logger/JavaLogger.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/logger/src/linuxX64Main/kotlin/ro/sevens/logger/LinuxLogger.kt" beforeDir="false" afterPath="$PROJECT_DIR$/logger/src/linuxX64Main/kotlin/ro/dragossusi/sevens/logger/LinuxLogger.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/settings.gradle" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/socket/build.gradle" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/socket/src/commonMain/kotlin/ro/sevens/socket/CommandFrame.kt" beforeDir="false" afterPath="$PROJECT_DIR$/socket/src/commonMain/kotlin/ro/dragossusi/sevens/socket/CommandFrame.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/socket/src/commonMain/kotlin/ro/sevens/socket/SocketCommandLogger.kt" beforeDir="false" afterPath="$PROJECT_DIR$/socket/src/commonMain/kotlin/ro/dragossusi/sevens/socket/SocketCommandLogger.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/socket/src/commonMain/kotlin/ro/sevens/socket/command/ClientFrameKey.kt" beforeDir="false" afterPath="$PROJECT_DIR$/socket/src/commonMain/kotlin/ro/dragossusi/sevens/socket/command/ClientFrameKey.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/socket/src/commonMain/kotlin/ro/sevens/socket/command/FrameKey.kt" beforeDir="false" afterPath="$PROJECT_DIR$/socket/src/commonMain/kotlin/ro/dragossusi/sevens/socket/command/FrameKey.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/socket/src/commonMain/kotlin/ro/sevens/socket/command/RawCommand.kt" beforeDir="false" afterPath="$PROJECT_DIR$/socket/src/commonMain/kotlin/ro/dragossusi/sevens/socket/command/RawCommand.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/socket/src/commonMain/kotlin/ro/sevens/socket/command/ServerFrameKey.kt" beforeDir="false" afterPath="$PROJECT_DIR$/socket/src/commonMain/kotlin/ro/dragossusi/sevens/socket/command/ServerFrameKey.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/socket/src/commonMain/kotlin/ro/sevens/socket/processor/CommandProcessor.kt" beforeDir="false" afterPath="$PROJECT_DIR$/socket/src/commonMain/kotlin/ro/dragossusi/sevens/socket/processor/CommandProcessor.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/socket/src/commonMain/kotlin/ro/sevens/socket/processor/JsonCommandProcessor.kt" beforeDir="false" afterPath="$PROJECT_DIR$/socket/src/commonMain/kotlin/ro/dragossusi/sevens/socket/processor/JsonCommandProcessor.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/socket/src/iosMain/kotlin/ro/sevens/socket/IosCommandProcessor.kt" beforeDir="false" afterPath="$PROJECT_DIR$/socket/src/iosMain/kotlin/ro/dragossusi/sevens/socket/IosCommandProcessor.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/socket/src/iosMain/kotlin/ro/sevens/socket/SocketCommandLogger.kt" beforeDir="false" afterPath="$PROJECT_DIR$/socket/src/iosMain/kotlin/ro/dragossusi/sevens/socket/SocketCommandLogger.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/socket/src/jsMain/kotlin/ro/sevens/socket/JsCommandProcessor.kt" beforeDir="false" afterPath="$PROJECT_DIR$/socket/src/jsMain/kotlin/ro/dragossusi/sevens/socket/JsCommandProcessor.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/socket/src/jsMain/kotlin/ro/sevens/socket/SocketCommandLogger.kt" beforeDir="false" afterPath="$PROJECT_DIR$/socket/src/jsMain/kotlin/ro/dragossusi/sevens/socket/SocketCommandLogger.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/socket/src/jvmMain/kotlin/ro/sevens/socket/JavaCommandProcessor.kt" beforeDir="false" afterPath="$PROJECT_DIR$/socket/src/jvmMain/kotlin/ro/dragossusi/sevens/socket/JavaCommandProcessor.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/socket/src/jvmMain/kotlin/ro/sevens/socket/SocketCommandLogger.kt" beforeDir="false" afterPath="$PROJECT_DIR$/socket/src/jvmMain/kotlin/ro/dragossusi/sevens/socket/SocketCommandLogger.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/socket/src/linuxX64Main/kotlin/ro/sevens/socket/LinuxCommandProcessor.kt" beforeDir="false" afterPath="$PROJECT_DIR$/socket/src/linuxX64Main/kotlin/ro/dragossusi/sevens/socket/LinuxCommandProcessor.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/socket/src/linuxX64Main/kotlin/ro/sevens/socket/SocketCommandLogger.kt" beforeDir="false" afterPath="$PROJECT_DIR$/socket/src/linuxX64Main/kotlin/ro/dragossusi/sevens/socket/SocketCommandLogger.kt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -40,23 +70,32 @@
         <task path="$PROJECT_DIR$">
           <activation />
         </task>
+        <task path="$PROJECT_DIR$/socket">
+          <activation />
+        </task>
+        <task path="$PROJECT_DIR$/logger">
+          <activation />
+        </task>
+        <task path="$PROJECT_DIR$/game-listener">
+          <activation />
+        </task>
         <projects_view>
           <tree_state>
             <expand>
               <path>
                 <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
-                <item name="sevens-core" type="f1a62948:ProjectNode" />
+                <item name="SevensCore" type="f1a62948:ProjectNode" />
               </path>
               <path>
                 <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
-                <item name="sevens-core" type="f1a62948:ProjectNode" />
+                <item name="SevensCore" type="f1a62948:ProjectNode" />
                 <item name="Tasks" type="e4a08cd1:TasksNode" />
               </path>
               <path>
                 <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
-                <item name="sevens-core" type="f1a62948:ProjectNode" />
+                <item name="SevensCore" type="f1a62948:ProjectNode" />
                 <item name="Tasks" type="e4a08cd1:TasksNode" />
-                <item name="build" type="c8890929:TasksNode$1" />
+                <item name="publishing" type="c8890929:TasksNode$1" />
               </path>
             </expand>
             <select />
@@ -68,19 +107,98 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="GitSEFilterConfiguration">
+    <file-type-list>
+      <filtered-out-file-type name="LOCAL_BRANCH" />
+      <filtered-out-file-type name="REMOTE_BRANCH" />
+      <filtered-out-file-type name="TAG" />
+      <filtered-out-file-type name="COMMIT_BY_MESSAGE" />
+    </file-type-list>
+  </component>
   <component name="ProjectId" id="1gVb2Ox3bWc4iQLpwgajgfDL8wP" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../sevens-payload" />
     <property name="show.unlinked.gradle.project.popup" value="true" />
   </component>
-  <component name="RunManager">
-    <configuration name="sevens-core [build]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+  <component name="RecentsManager">
+    <key name="CopyKotlinDeclarationDialog.RECENTS_KEY">
+      <recent name="" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Gradle.sevens-core [publish]">
+    <configuration name="sevens-core [publishKotlinMultiplatformPublicationToSonatypeRepository]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value="publishKotlinMultiplatformPublicationToSonatypeRepository" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>true</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <method v="2" />
+    </configuration>
+    <configuration name="sevens-core [publishToMavenLocal]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value="publishToMavenLocal" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>true</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <method v="2" />
+    </configuration>
+    <configuration name="sevens-core [publish]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value="publish" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>true</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <method v="2" />
+    </configuration>
+    <configuration name="sevens-core:game-listener [build]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$/game-listener" />
         <option name="externalSystemIdString" value="GRADLE" />
         <option name="scriptParameters" />
         <option name="taskDescriptions">
@@ -93,15 +211,43 @@
         </option>
         <option name="vmOptions" />
       </ExternalSystemSettings>
-      <GradleScriptDebugEnabled>true</GradleScriptDebugEnabled>
+      <ExternalSystemDebugServerProcess>true</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <method v="2" />
+    </configuration>
+    <configuration name="sevens-core:socket [publishToMavenLocal]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$/socket" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value="publishToMavenLocal" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>true</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
       <method v="2" />
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Gradle.sevens-core [build]" />
+        <item itemvalue="Gradle.sevens-core [publish]" />
+        <item itemvalue="Gradle.sevens-core [publishToMavenLocal]" />
+        <item itemvalue="Gradle.sevens-core:socket [publishToMavenLocal]" />
+        <item itemvalue="Gradle.sevens-core:game-listener [build]" />
+        <item itemvalue="Gradle.sevens-core [publishKotlinMultiplatformPublicationToSonatypeRepository]" />
       </list>
     </recent_temporary>
   </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
       <changelist id="dcb902b0-9808-4eda-b540-8a52b86d3e0b" name="Default Changelist" comment="" />
@@ -110,24 +256,30 @@
       <option name="presentableId" value="Default" />
       <updated>1598202498089</updated>
     </task>
+    <task id="LOCAL-00001" summary="Updated kotlin version">
+      <created>1598202975891</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1598202975891</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
-  <component name="WindowStateProjectService">
-    <state width="1874" height="280" key="GridCell.Tab.0.bottom" timestamp="1598202851190">
-      <screen x="0" y="0" width="1920" height="1048" />
-    </state>
-    <state width="1874" height="280" key="GridCell.Tab.0.bottom/0.0.1920.1048@0.0.1920.1048" timestamp="1598202851190" />
-    <state width="1874" height="280" key="GridCell.Tab.0.center" timestamp="1598202851190">
-      <screen x="0" y="0" width="1920" height="1048" />
-    </state>
-    <state width="1874" height="280" key="GridCell.Tab.0.center/0.0.1920.1048@0.0.1920.1048" timestamp="1598202851190" />
-    <state width="1874" height="280" key="GridCell.Tab.0.left" timestamp="1598202851190">
-      <screen x="0" y="0" width="1920" height="1048" />
-    </state>
-    <state width="1874" height="280" key="GridCell.Tab.0.left/0.0.1920.1048@0.0.1920.1048" timestamp="1598202851190" />
-    <state width="1874" height="280" key="GridCell.Tab.0.right" timestamp="1598202851190">
-      <screen x="0" y="0" width="1920" height="1048" />
-    </state>
-    <state width="1874" height="280" key="GridCell.Tab.0.right/0.0.1920.1048@0.0.1920.1048" timestamp="1598202851190" />
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Updated kotlin version" />
+    <option name="LAST_COMMIT_MESSAGE" value="Updated kotlin version" />
   </component>
 </project>

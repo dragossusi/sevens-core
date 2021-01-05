@@ -1,4 +1,7 @@
-package ro.dragossusi.logger
+package ro.dragossusi.sevens.socket.processor
+
+import ro.dragossusi.sevens.socket.CommandFrame
+import ro.dragossusi.sevens.socket.command.RawCommand
 
 /**
  * server
@@ -19,24 +22,11 @@ package ro.dragossusi.logger
  * along with server.  If not, see [License](http://www.gnu.org/licenses/) .
  *
  */
-open class IosLogger : TagLogger {
-    override fun i(message: String) {
-        println("I: $message")
-    }
+interface CommandProcessor {
 
-    override fun d(message: String) {
-        println("D: $message")
-    }
+    fun <T> process(command: CommandFrame<T>): String
 
-    override fun e(message: String) {
-        println("E: $message")
-    }
+    fun readIn(frameText: String): CommandFrame<*>?
+    fun readRaw(frameText: String): RawCommand
 
-    override fun e(throwable: Throwable) {
-        println("E: $throwable")
-    }
-
-    override fun w(message: String) {
-        println("W: $message")
-    }
 }

@@ -1,42 +1,44 @@
 package ro.dragossusi.logger
 
 /**
- * server
+ * sevens-client
  *
  * Copyright (C) 2020  Rachieru Dragos-Mihai
  *
- * server is free software: you can redistribute it and/or modify
+ * sevens-client is free software: you can redistribute it and/or modify
  * it under the terms of the GNU General Public License as published by
  * the Free Software Foundation, either version 2 of the License, or
  * (at your option) any later version.
  *
- * server is distributed in the hope that it will be useful,
+ * sevens-client is distributed in the hope that it will be useful,
  * but WITHOUT ANY WARRANTY; without even the implied warranty of
  * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
  * GNU General Public License for more details.
  *
  * You should have received a copy of the GNU General Public License
- * along with server.  If not, see [License](http://www.gnu.org/licenses/) .
+ * along with sevens-client.  If not, see [License](http://www.gnu.org/licenses/) .
  *
  */
-open class IosLogger : TagLogger {
+class ConsoleLogger(private val tag: String) : TagLogger {
+
     override fun i(message: String) {
-        println("I: $message")
+        println("$tag/I: $message")
     }
 
     override fun d(message: String) {
-        println("D: $message")
+        println("$tag/D: $message")
     }
 
     override fun e(message: String) {
-        println("E: $message")
+        println("$tag/E: $message")
     }
 
     override fun e(throwable: Throwable) {
-        println("E: $throwable")
+        println("$tag/E: $throwable")
     }
 
     override fun w(message: String) {
-        println("W: $message")
+        println("$tag/W: $message")
     }
+
 }

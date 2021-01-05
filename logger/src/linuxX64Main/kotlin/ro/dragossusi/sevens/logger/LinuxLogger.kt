@@ -19,24 +19,24 @@ package ro.dragossusi.logger
  * along with server.  If not, see [License](http://www.gnu.org/licenses/) .
  *
  */
-open class IosLogger : TagLogger {
+open class LinuxLogger(private val tag: String? = "Log") : TagLogger {
     override fun i(message: String) {
-        println("I: $message")
+        println("$tag/I: $message")
     }
 
     override fun d(message: String) {
-        println("D: $message")
+        println("$tag/D: $message")
     }
 
     override fun e(message: String) {
-        println("E: $message")
+        println("$tag/E: $message")
     }
 
     override fun e(throwable: Throwable) {
-        println("E: $throwable")
+        println("$tag/E: $throwable")
     }
 
     override fun w(message: String) {
-        println("W: $message")
+        println("$tag/W: $message")
     }
 }

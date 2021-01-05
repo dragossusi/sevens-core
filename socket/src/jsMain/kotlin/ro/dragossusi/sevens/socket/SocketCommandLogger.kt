@@ -1,4 +1,6 @@
-package ro.dragossusi.logger
+package ro.dragossusi.sevens.socket
+
+import ro.dragossusi.logger.TagLogger
 
 /**
  * server
@@ -19,24 +21,24 @@ package ro.dragossusi.logger
  * along with server.  If not, see [License](http://www.gnu.org/licenses/) .
  *
  */
-open class IosLogger : TagLogger {
+actual object SocketCommandLogger : TagLogger {
     override fun i(message: String) {
-        println("I: $message")
+        println("I $message")
     }
 
     override fun d(message: String) {
-        println("D: $message")
+        println("D $message")
     }
 
     override fun e(message: String) {
-        println("E: $message")
+        println("E $message")
     }
 
     override fun e(throwable: Throwable) {
-        println("E: $throwable")
+        println("E $throwable")
     }
 
     override fun w(message: String) {
-        println("W: $message")
+        println("W $message")
     }
 }

@@ -1,4 +1,9 @@
-package ro.dragossusi.logger
+package ro.dragossusi.sevens.socket
+
+import ro.dragossusi.logger.JavaLogger
+import ro.dragossusi.logger.TagLogger
+import ro.dragossusi.sevens.socket.processor.CommandProcessor
+import java.util.logging.Logger
 
 /**
  * server
@@ -19,24 +24,7 @@ package ro.dragossusi.logger
  * along with server.  If not, see [License](http://www.gnu.org/licenses/) .
  *
  */
-open class IosLogger : TagLogger {
-    override fun i(message: String) {
-        println("I: $message")
-    }
-
-    override fun d(message: String) {
-        println("D: $message")
-    }
-
-    override fun e(message: String) {
-        println("E: $message")
-    }
-
-    override fun e(throwable: Throwable) {
-        println("E: $throwable")
-    }
-
-    override fun w(message: String) {
-        println("W: $message")
-    }
-}
+actual object SocketCommandLogger : JavaLogger(
+        Logger.getLogger(CommandProcessor::class.java.name),
+        "Socket"
+), TagLogger

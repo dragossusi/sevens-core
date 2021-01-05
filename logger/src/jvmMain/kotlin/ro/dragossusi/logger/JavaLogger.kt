@@ -1,5 +1,8 @@
 package ro.dragossusi.logger
 
+import java.util.logging.Level
+import java.util.logging.Logger
+
 /**
  * server
  *
@@ -19,24 +22,30 @@ package ro.dragossusi.logger
  * along with server.  If not, see [License](http://www.gnu.org/licenses/) .
  *
  */
-open class IosLogger : TagLogger {
-    override fun i(message: String) {
-        println("I: $message")
-    }
+@Suppress("unused")
+open class JavaLogger(
+    private val logger: Logger,
+    private val tag: String
+) : TagLogger {
 
     override fun d(message: String) {
-        println("D: $message")
+        logger.log(Level.INFO, "$tag:  $message")
+    }
+
+    override fun i(message: String) {
+        logger.log(Level.INFO, "$tag: $message")
     }
 
     override fun e(message: String) {
-        println("E: $message")
+        logger.log(Level.SEVERE, "$tag: $message")
     }
 
     override fun e(throwable: Throwable) {
-        println("E: $throwable")
+        logger.log(Level.SEVERE, "$tag: ${throwable.message ?: "Error"}", throwable)
     }
 
     override fun w(message: String) {
-        println("W: $message")
+        logger.log(Level.WARNING, "$tag: $message")
     }
+
 }

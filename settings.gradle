@@ -1,9 +1,0 @@
-rootProject.name = 'sevens-core'
-include 'socket'
-include 'logger'
-include 'game-listener'
-
-//payload
-include ':payload'
-project(":payload").projectDir = file("../sevens-payload/payload")
-
