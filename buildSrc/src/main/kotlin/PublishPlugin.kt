@@ -64,8 +64,8 @@ class PublishPlugin : Plugin<Project> {
         pom {
             licenses {
                 license {
-                    name.set("The Apache License, Version 2.0")
-                    url.set("http://www.apache.org/licenses/LICENSE-2.0.txt")
+                    name.set("GPL-v2.0")
+                    url.set("http://www.gnu.org/licenses/old-licenses/gpl-2.0.txt")
                 }
             }
             developers {

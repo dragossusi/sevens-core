@@ -15,6 +15,7 @@ kotlin {
     jvm()
     js() {
         nodejs()
+        browser()
     }
 //    ios() {
 //        binaries {

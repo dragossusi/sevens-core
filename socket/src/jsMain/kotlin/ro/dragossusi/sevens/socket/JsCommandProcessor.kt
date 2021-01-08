@@ -25,11 +25,9 @@ import ro.dragossusi.sevens.socket.processor.JsonCommandProcessor
  *
  */
 class JsCommandProcessor : JsonCommandProcessor(
-        Json{
-
-        },
-        SocketCommandLogger,
-        ServerFrameKey.values(),
-        ClientFrameKey.values()
+    Json { },
+    SocketCommandLogger,
+    ClientFrameKey.values(),
+    ServerFrameKey.values()
 ) {
 }

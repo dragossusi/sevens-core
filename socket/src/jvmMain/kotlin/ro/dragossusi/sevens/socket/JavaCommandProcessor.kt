@@ -29,6 +29,6 @@ class JavaCommandProcessor : JsonCommandProcessor(
 
         },
         SocketCommandLogger,
-        ServerFrameKey.values(),
-        ClientFrameKey.values()
+        ClientFrameKey.values(),
+        ServerFrameKey.values()
 )

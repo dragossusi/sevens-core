@@ -14,6 +14,7 @@ kotlin {
     jvm()
     js() {
         nodejs()
+        browser()
     }
 
     sourceSets {
