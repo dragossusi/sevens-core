@@ -24,8 +24,10 @@ import ro.dragossusi.sevens.socket.processor.JsonCommandProcessor
  * along with sevens-client.  If not, see [License](http://www.gnu.org/licenses/) .
  *
  */
-class JsCommandProcessor : JsonCommandProcessor(
-    Json { },
+class JsCommandProcessor(
+    json: Json
+) : JsonCommandProcessor(
+    json,
     SocketCommandLogger,
     ClientFrameKey.values(),
     ServerFrameKey.values()

@@ -4,6 +4,9 @@ import ro.dragossusi.sevens.socket.CommandFrame
 import ro.dragossusi.sevens.socket.command.RawCommand
 
 /**
+ *
+ *
+ *
  * server
  *
  * Copyright (C) 2020  Rachieru Dragos-Mihai
@@ -24,9 +27,21 @@ import ro.dragossusi.sevens.socket.command.RawCommand
  */
 interface CommandProcessor {
 
+    /**
+     * Transform a command frame into key:value text
+     * The text will be sent over socket
+     */
     fun <T> process(command: CommandFrame<T>): String
 
+    /**
+     * Read a text and transform it into a CommandFrame
+     */
     fun readIn(frameText: String): CommandFrame<*>?
+
+
+    /**
+     * Read a text and transform it into a RawCommand
+     */
     fun readRaw(frameText: String): RawCommand
 
 }

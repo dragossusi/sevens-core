@@ -3,6 +3,9 @@ package ro.dragossusi.sevens.socket
 import ro.dragossusi.logger.TagLogger
 
 /**
+ *
+ * Default logger for socket
+ *
  * server
  *
  * Copyright (C) 2020  Rachieru Dragos-Mihai

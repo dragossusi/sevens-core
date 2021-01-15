@@ -9,6 +9,9 @@ import ro.dragossusi.sevens.payload.game.NewRoundResponse
 import ro.dragossusi.sevens.payload.game.PlayerTurnResponse
 
 /**
+ *
+ * Frame keys received by the client
+ *
  * server
  *
  * Copyright (C) 2020  Rachieru Dragos-Mihai
@@ -42,6 +45,10 @@ sealed class ClientFrameKey<T>(
     }
 
     companion object {
+
+        /**
+         * All types used for socket
+         */
         fun values() = arrayOf(
             CONNECTED_ROOM,
             NEW_ROUND,
@@ -53,30 +60,51 @@ sealed class ClientFrameKey<T>(
         )
     }
 
+    /**
+     * The client connected to the room
+     */
     @SerialName("connected_room")
     object CONNECTED_ROOM : ClientFrameKey<Long>(
         "connected_room",
         Long.serializer()
     )
 
+    /**
+     * A new round started
+     */
     @SerialName("new_round")
     object NEW_ROUND : ClientFrameKey<NewRoundResponse>("new_round", NewRoundResponse.serializer())
 
+    /**
+     * The game started
+     */
     @SerialName("game_started")
     object GAME_STARTED :
         ClientFrameKey<GameStartedResponse>("game_started", GameStartedResponse.serializer())
 
+    /**
+     * The game ended
+     */
     @SerialName("game_ended")
     object GAME_ENDED : ClientFrameKey<GameEndResponse>("game_ended", GameEndResponse.serializer())
 
+    /**
+     * The round ended
+     */
     @SerialName("end_round")
     object END_ROUND : ClientFrameKey<NewRoundResponse>("end_round", NewRoundResponse.serializer())
 
+    /**
+     * It's a new player's turn
+     */
     @SerialName("player_turn")
     object PLAYER_TURN : ClientFrameKey<PlayerTurnResponse>(
         "player_turn", PlayerTurnResponse.serializer()
     )
 
+    /**
+     * Room stopped
+     */
     @SerialName("room_stop")
     object ROOM_STOP : ClientFrameKey<Nothing>("room_stop", null)
 }

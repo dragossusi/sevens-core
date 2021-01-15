@@ -1,6 +1,11 @@
 package ro.dragossusi.sevens.socket.command
 
 /**
+ * Key:Value class used to send data over a socket
+ *
+ * @param key used to know the action type and determine the FrameKey for value type
+ * @param value serialized string of an object
+ *
  * server
  *
  * Copyright (C) 2020  Rachieru Dragos-Mihai
@@ -20,6 +25,12 @@ package ro.dragossusi.sevens.socket.command
  *
  */
 class RawCommand constructor(
+    /**
+     * used to know the action type and determine the FrameKey for value type
+     */
     val key: String,
-    val json: String?
+    /**
+     * serialized string of an object
+     */
+    val value: String?
 )

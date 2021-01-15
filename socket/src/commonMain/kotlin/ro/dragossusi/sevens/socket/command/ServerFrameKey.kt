@@ -5,6 +5,8 @@ import kotlinx.serialization.SerialName
 import ro.dragossusi.sevens.payload.Card
 
 /**
+ * Frame keys received by the server
+ *
  * server
  *
  * Copyright (C) 2020  Rachieru Dragos-Mihai
@@ -28,23 +30,50 @@ sealed class ServerFrameKey<T>(
     override val serializer: KSerializer<T>?
 ) : FrameKey<T> {
 
+    override fun equals(other: Any?): Boolean {
+        if (other == key) return true
+        return super.equals(other)
+    }
+
+    override fun toString(): String {
+        return key
+    }
+
     companion object {
+
+        /**
+         * All types used for socket
+         */
         fun values() = arrayOf(
-            PLACE,
-            END
+            PLACE_CARD,
+            DRAW_CARD,
+            PICK_TYPE,
+            END_ROUND
         )
     }
 
-    @SerialName("place")
-    object PLACE : ServerFrameKey<Card>("place", Card.serializer())
+    /**
+     * Place a card
+     */
+    @SerialName("place_card")
+    object PLACE_CARD : ServerFrameKey<Card>("place_card", Card.serializer())
 
-    @SerialName("draw")
-    object DRAW : ServerFrameKey<Nothing>("draw", null)
+    /**
+     * Draw a card
+     */
+    @SerialName("draw_card")
+    object DRAW_CARD : ServerFrameKey<Nothing>("draw_card", null)
 
-    @SerialName("pick")
-    object PICK : ServerFrameKey<Card.Type>("pick", Card.Type.serializer())
+    /**
+     * Pick a card type
+     */
+    @SerialName("pick_type")
+    object PICK_TYPE : ServerFrameKey<Card.Type>("pick_type", Card.Type.serializer())
 
-    @SerialName("end")
-    object END : ServerFrameKey<Nothing>("end", null)
+    /**
+     * End a round
+     */
+    @SerialName("end_round")
+    object END_ROUND : ServerFrameKey<Nothing>("end_round", null)
 
 }

@@ -5,6 +5,12 @@ import kotlinx.serialization.json.Json
 import ro.dragossusi.sevens.socket.CommandFrame
 
 /**
+ *
+ * Frame keys used for deserialization
+ *
+ * @param key the name used in the response
+ * @param serializer the serializer used for the value received in response, null for no value
+ *
  * server
  *
  * Copyright (C) 2020  Rachieru Dragos-Mihai
@@ -24,19 +30,39 @@ import ro.dragossusi.sevens.socket.CommandFrame
  *
  */
 interface FrameKey<T> {
+    /**
+     * the name used in the response
+     */
     val key: String
+
+    /**
+     * the serializer used for the value received in response, null for no value
+     */
     val serializer: KSerializer<T>?
 
 }
 
-fun <T> FrameKey<T>.read(json: Json, jsonString: String?): T? {
-    return jsonString?.let { string ->
+/**
+ * Deserialize json to value type
+ *
+ * @param json configuration used
+ * @param valueString text to deserialize
+ *
+ */
+fun <T> FrameKey<T>.read(
+    json: Json,
+    valueString: String?
+): T? {
+    return valueString?.let { string ->
         serializer?.let {
             json.decodeFromString(it, string)
         }
     }
 }
 
+/**
+ * Transform value string into a CommandFrame
+ */
 fun <T> FrameKey<T>.toCommandFrame(json: Json, jsonString: String?): CommandFrame<T> {
     return CommandFrame(
         this,

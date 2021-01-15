@@ -4,6 +4,9 @@ import kotlinx.serialization.json.Json
 import ro.dragossusi.sevens.socket.command.FrameKey
 
 /**
+ *
+ * Class used for working with socket commands
+ *
  * server
  *
  * Copyright (C) 2020  Rachieru Dragos-Mihai
@@ -27,6 +30,9 @@ data class CommandFrame<T>(
     val data: T?
 ) {
 
+    /**
+     * Encode data to a json
+     */
     fun toJson(json: Json): String? {
         return data?.let {
             json.encodeToString<T>(key.serializer!!, it)

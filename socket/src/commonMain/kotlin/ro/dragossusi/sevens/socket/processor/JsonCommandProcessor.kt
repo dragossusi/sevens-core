@@ -8,6 +8,9 @@ import ro.dragossusi.sevens.socket.command.RawCommand
 import ro.dragossusi.sevens.socket.command.toCommandFrame
 
 /**
+ *
+ * Json implementation of a command processor
+ *
  * server
  *
  * Copyright (C) 2020  Rachieru Dragos-Mihai
@@ -41,7 +44,7 @@ open class JsonCommandProcessor constructor(
         val raw = readRaw(frameText)
         inFrameKeyValues.forEach { frame ->
             if (frame.key == raw.key) {
-                return frame.toCommandFrame(json, raw.json)
+                return frame.toCommandFrame(json, raw.value)
             }
         }
         return null
