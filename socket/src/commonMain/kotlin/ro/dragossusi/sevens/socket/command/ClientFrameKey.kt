@@ -1,8 +1,11 @@
 package ro.dragossusi.sevens.socket.command
 
 import kotlinx.serialization.KSerializer
+import kotlinx.serialization.PolymorphicSerializer
 import kotlinx.serialization.SerialName
 import kotlinx.serialization.builtins.serializer
+import ro.dragossusi.sevens.payload.base.LobbyData
+import ro.dragossusi.sevens.payload.database.LobbyResponse
 import ro.dragossusi.sevens.payload.game.GameEndResponse
 import ro.dragossusi.sevens.payload.game.GameStartedResponse
 import ro.dragossusi.sevens.payload.game.NewRoundResponse
@@ -40,6 +43,10 @@ sealed class ClientFrameKey<T>(
         return super.equals(other)
     }
 
+    override fun hashCode(): Int {
+        return key.hashCode()
+    }
+
     override fun toString(): String {
         return key
     }
@@ -50,6 +57,9 @@ sealed class ClientFrameKey<T>(
          * All types used for socket
          */
         fun values() = arrayOf(
+            CONNECTED_LOBBY,
+            LOBBY_PLAYER_CONNECTED,
+            LOBBY_PLAYER_DISCONNECTED,
             CONNECTED_ROOM,
             NEW_ROUND,
             PLAYER_TURN,
@@ -59,6 +69,33 @@ sealed class ClientFrameKey<T>(
             GAME_ENDED
         )
     }
+
+    /**
+     * The client connected to the lobby
+     */
+    @SerialName("connected_lobby")
+    object CONNECTED_LOBBY : ClientFrameKey<LobbyData>(
+        "connected_lobby",
+        PolymorphicSerializer(LobbyData::class)
+    )
+
+    /**
+     * The client connected to the room
+     */
+    @SerialName("lobby_player_connected")
+    object LOBBY_PLAYER_CONNECTED : ClientFrameKey<LobbyData>(
+        "lobby_player_connected",
+        PolymorphicSerializer(LobbyData::class)
+    )
+
+    /**
+     * The client connected to the room
+     */
+    @SerialName("lobby_player_disconnected")
+    object LOBBY_PLAYER_DISCONNECTED : ClientFrameKey<LobbyData>(
+        "lobby_player_disconnected",
+        PolymorphicSerializer(LobbyData::class)
+    )
 
     /**
      * The client connected to the room
