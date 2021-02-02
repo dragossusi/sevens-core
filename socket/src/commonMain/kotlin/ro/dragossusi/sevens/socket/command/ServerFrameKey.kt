@@ -48,7 +48,7 @@ sealed class ServerFrameKey<T>(
             PLACE_CARD,
             DRAW_CARD,
             PICK_TYPE,
-            END_ROUND
+            END_TURN
         )
     }
 
@@ -74,6 +74,6 @@ sealed class ServerFrameKey<T>(
      * End a round
      */
     @SerialName("end_round")
-    object END_ROUND : ServerFrameKey<Nothing>("end_round", null)
+    object END_TURN : ServerFrameKey<Nothing>("end_round", null)
 
 }

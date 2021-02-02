@@ -5,12 +5,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="dcb902b0-9808-4eda-b540-8a52b86d3e0b" name="Default Changelist" comment="Updated code">
-      <change afterPath="$PROJECT_DIR$/game-listener/src/commonMain/kotlin/ro/dragossusi/sevens/game/listener/OnLobbyConnected.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/game-listener/src/commonMain/kotlin/ro/dragossusi/sevens/game/listener/OnLobbyPlayerConnected.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/game-listener/src/commonMain/kotlin/ro/dragossusi/sevens/game/listener/OnLobbyPlayerDisconnected.kt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/buildSrc/src/main/java/Versions.kt" beforeDir="false" afterPath="$PROJECT_DIR$/buildSrc/src/main/java/Versions.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/socket/src/commonMain/kotlin/ro/dragossusi/sevens/socket/command/ClientFrameKey.kt" beforeDir="false" afterPath="$PROJECT_DIR$/socket/src/commonMain/kotlin/ro/dragossusi/sevens/socket/command/ClientFrameKey.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/game-listener/build.gradle.kts" beforeDir="false" afterPath="$PROJECT_DIR$/game-listener/build.gradle.kts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/logger/build.gradle.kts" beforeDir="false" afterPath="$PROJECT_DIR$/logger/build.gradle.kts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/socket/build.gradle.kts" beforeDir="false" afterPath="$PROJECT_DIR$/socket/build.gradle.kts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/socket/src/commonMain/kotlin/ro/dragossusi/sevens/socket/command/ServerFrameKey.kt" beforeDir="false" afterPath="$PROJECT_DIR$/socket/src/commonMain/kotlin/ro/dragossusi/sevens/socket/command/ServerFrameKey.kt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -47,18 +47,11 @@
               <path>
                 <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
                 <item name="SevensCore" type="f1a62948:ProjectNode" />
-                <item name="game-listener" type="2d1252cf:ModuleNode" />
-              </path>
-              <path>
-                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
-                <item name="SevensCore" type="f1a62948:ProjectNode" />
-                <item name="game-listener" type="2d1252cf:ModuleNode" />
                 <item name="Tasks" type="e4a08cd1:TasksNode" />
               </path>
               <path>
                 <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
                 <item name="SevensCore" type="f1a62948:ProjectNode" />
-                <item name="game-listener" type="2d1252cf:ModuleNode" />
                 <item name="Tasks" type="e4a08cd1:TasksNode" />
                 <item name="publishing" type="c8890929:TasksNode$1" />
               </path>
@@ -108,27 +101,6 @@
     </key>
   </component>
   <component name="RunManager" selected="Gradle.sevens-core [publishToMavenLocal]">
-    <configuration name="sevens-core [build]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
-      <ExternalSystemSettings>
-        <option name="executionName" />
-        <option name="externalProjectPath" value="$PROJECT_DIR$" />
-        <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" />
-        <option name="taskDescriptions">
-          <list />
-        </option>
-        <option name="taskNames">
-          <list>
-            <option value="build" />
-          </list>
-        </option>
-        <option name="vmOptions" />
-      </ExternalSystemSettings>
-      <ExternalSystemDebugServerProcess>true</ExternalSystemDebugServerProcess>
-      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
-      <DebugAllEnabled>false</DebugAllEnabled>
-      <method v="2" />
-    </configuration>
     <configuration name="sevens-core [publishToMavenLocal]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
@@ -192,7 +164,28 @@
       <DebugAllEnabled>false</DebugAllEnabled>
       <method v="2" />
     </configuration>
-    <configuration name="sevens-core:socket [publishToMavenLocal]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+    <configuration name="sevens-core:logger [publish]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$/logger" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value="publish" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>true</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <method v="2" />
+    </configuration>
+    <configuration name="sevens-core:socket [publish]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$/socket" />
@@ -203,7 +196,7 @@
         </option>
         <option name="taskNames">
           <list>
-            <option value="publishToMavenLocal" />
+            <option value="publish" />
           </list>
         </option>
         <option name="vmOptions" />
@@ -216,10 +209,10 @@
     <recent_temporary>
       <list>
         <item itemvalue="Gradle.sevens-core [publishToMavenLocal]" />
-        <item itemvalue="Gradle.sevens-core [publish]" />
+        <item itemvalue="Gradle.sevens-core:socket [publish]" />
         <item itemvalue="Gradle.sevens-core:game-listener [publish]" />
-        <item itemvalue="Gradle.sevens-core:socket [publishToMavenLocal]" />
-        <item itemvalue="Gradle.sevens-core [build]" />
+        <item itemvalue="Gradle.sevens-core:logger [publish]" />
+        <item itemvalue="Gradle.sevens-core [publish]" />
       </list>
     </recent_temporary>
   </component>
@@ -267,7 +260,21 @@
       <option name="project" value="LOCAL" />
       <updated>1610697163304</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="Added lobby code&#10;Updated version">
+      <created>1611646367283</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1611646367283</updated>
+    </task>
+    <task id="LOCAL-00007" summary="Updated gradle version">
+      <created>1611647203631</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1611647203631</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -288,6 +295,7 @@
     <MESSAGE value="Upgraded version" />
     <MESSAGE value="Updated code" />
     <MESSAGE value="Added lobby code&#10;Updated version" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added lobby code&#10;Updated version" />
+    <MESSAGE value="Updated gradle version" />
+    <option name="LAST_COMMIT_MESSAGE" value="Updated gradle version" />
   </component>
 </project>
