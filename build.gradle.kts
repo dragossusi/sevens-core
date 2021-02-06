@@ -5,6 +5,8 @@ buildscript {
     }
 }
 
+version = Versions.app
+
 plugins {
     id("org.jetbrains.kotlin.multiplatform") version Versions.kotlin apply false
     id("org.jetbrains.kotlin.plugin.serialization") version Versions.kotlin apply false

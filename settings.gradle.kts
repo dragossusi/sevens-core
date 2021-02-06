@@ -1,4 +1,4 @@
-rootProject.name = "SevensCore"
+rootProject.name = "sevens-core"
 include("socket")
 include("logger")
 include("game-listener")

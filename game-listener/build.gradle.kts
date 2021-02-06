@@ -8,22 +8,20 @@ group = "ro.dragossusi.sevens"
 version = Versions.app
 
 kotlin {
-    /* Targets configuration omitted. 
-    *  To find out how to configure the targets, please follow the link:
-    *  https://kotlinlang.org/docs/reference/building-mpp-with-gradle.html#setting-up-targets */
+
     jvm()
-    js(IR) {
+    js(BOTH) {
         nodejs()
-        binaries.executable()
+//        binaries.executable()
     }
-//    ios() {
-//        binaries {
-//            framework {
-//                baseName = "SevensGameListener"
-//            }
-//        }
-//    }
-//    linuxX64()
+    ios {
+        binaries {
+            framework {
+                baseName = "SevensGameListener"
+            }
+        }
+    }
+
     sourceSets {
         val commonMain by getting {
             dependencies {
