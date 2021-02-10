@@ -1,6 +1,6 @@
 package ro.dragossusi.sevens.socket
 
-import ro.dragossusi.logger.IosLogger
+import ro.dragossusi.logger.ConsoleLogger
 import ro.dragossusi.logger.TagLogger
 
 
@@ -23,4 +23,4 @@ import ro.dragossusi.logger.TagLogger
  * along with Sevens.  If not, see [License](http://www.gnu.org/licenses/) .
  *
  */
-actual object SocketCommandLogger : IosLogger(), TagLogger
+actual object SocketCommandLogger : ConsoleLogger("SocketCommand"), TagLogger

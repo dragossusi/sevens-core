@@ -25,5 +25,5 @@ import ro.dragossusi.sevens.payload.game.SimplePlayerResponse
 //typealias OnRoomStopped = ()->Unit
 
 fun interface OnGameStarted {
-    fun onGameStarted(players: Array<SimplePlayerResponse>)
+    fun onGameStarted(players: List<SimplePlayerResponse>)
 }

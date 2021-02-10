@@ -5,12 +5,14 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="dcb902b0-9808-4eda-b540-8a52b86d3e0b" name="Default Changelist" comment="Updated code">
+      <change beforePath="$PROJECT_DIR$/.idea/.name" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/buildSrc/src/main/java/Versions.kt" beforeDir="false" afterPath="$PROJECT_DIR$/buildSrc/src/main/java/Versions.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/game-listener/build.gradle.kts" beforeDir="false" afterPath="$PROJECT_DIR$/game-listener/build.gradle.kts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/logger/build.gradle.kts" beforeDir="false" afterPath="$PROJECT_DIR$/logger/build.gradle.kts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/socket/build.gradle.kts" beforeDir="false" afterPath="$PROJECT_DIR$/socket/build.gradle.kts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/socket/src/commonMain/kotlin/ro/dragossusi/sevens/socket/command/ServerFrameKey.kt" beforeDir="false" afterPath="$PROJECT_DIR$/socket/src/commonMain/kotlin/ro/dragossusi/sevens/socket/command/ServerFrameKey.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/game-listener/src/commonMain/kotlin/ro/dragossusi/sevens/game/listener/OnGameStarted.kt" beforeDir="false" afterPath="$PROJECT_DIR$/game-listener/src/commonMain/kotlin/ro/dragossusi/sevens/game/listener/OnGameStarted.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/logger/src/commonMain/kotlin/ro/dragossusi/logger/ConsoleLogger.kt" beforeDir="false" afterPath="$PROJECT_DIR$/logger/src/commonMain/kotlin/ro/dragossusi/logger/ConsoleLogger.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/logger/src/iosMain/kotlin/ro/sevens/logger/IosLogger.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/socket/src/iosMain/kotlin/ro/dragossusi/sevens/socket/IosCommandProcessor.kt" beforeDir="false" afterPath="$PROJECT_DIR$/socket/src/iosMain/kotlin/ro/dragossusi/sevens/socket/IosCommandProcessor.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/socket/src/iosMain/kotlin/ro/dragossusi/sevens/socket/SocketCommandLogger.kt" beforeDir="false" afterPath="$PROJECT_DIR$/socket/src/iosMain/kotlin/ro/dragossusi/sevens/socket/SocketCommandLogger.kt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -42,16 +44,16 @@
             <expand>
               <path>
                 <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
-                <item name="SevensCore" type="f1a62948:ProjectNode" />
+                <item name="sevens-core" type="f1a62948:ProjectNode" />
               </path>
               <path>
                 <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
-                <item name="SevensCore" type="f1a62948:ProjectNode" />
+                <item name="sevens-core" type="f1a62948:ProjectNode" />
                 <item name="Tasks" type="e4a08cd1:TasksNode" />
               </path>
               <path>
                 <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
-                <item name="SevensCore" type="f1a62948:ProjectNode" />
+                <item name="sevens-core" type="f1a62948:ProjectNode" />
                 <item name="Tasks" type="e4a08cd1:TasksNode" />
                 <item name="publishing" type="c8890929:TasksNode$1" />
               </path>
@@ -274,7 +276,21 @@
       <option name="project" value="LOCAL" />
       <updated>1611647203631</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="Fixes">
+      <created>1612273395992</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1612273395992</updated>
+    </task>
+    <task id="LOCAL-00009" summary="Updated versions">
+      <created>1612632735714</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1612632735714</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -296,6 +312,8 @@
     <MESSAGE value="Updated code" />
     <MESSAGE value="Added lobby code&#10;Updated version" />
     <MESSAGE value="Updated gradle version" />
-    <option name="LAST_COMMIT_MESSAGE" value="Updated gradle version" />
+    <MESSAGE value="Fixes" />
+    <MESSAGE value="Updated versions" />
+    <option name="LAST_COMMIT_MESSAGE" value="Updated versions" />
   </component>
 </project>

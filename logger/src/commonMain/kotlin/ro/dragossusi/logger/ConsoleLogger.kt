@@ -19,7 +19,7 @@ package ro.dragossusi.logger
  * along with sevens-client.  If not, see [License](http://www.gnu.org/licenses/) .
  *
  */
-class ConsoleLogger(private val tag: String) : TagLogger {
+open class ConsoleLogger(private val tag: String) : TagLogger {
 
     override fun i(message: String) {
         println("$tag/I: $message")

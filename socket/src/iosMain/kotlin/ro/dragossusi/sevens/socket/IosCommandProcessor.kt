@@ -1,7 +1,6 @@
 package ro.dragossusi.sevens.socket
 
 import kotlinx.serialization.json.Json
-import kotlinx.serialization.json.JsonConfiguration
 import ro.dragossusi.sevens.socket.command.ClientFrameKey
 import ro.dragossusi.sevens.socket.command.ServerFrameKey
 import ro.dragossusi.sevens.socket.processor.JsonCommandProcessor

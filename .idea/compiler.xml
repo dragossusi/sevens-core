@@ -2,22 +2,10 @@
 <project version="4">
   <component name="CompilerConfiguration">
     <bytecodeTargetLevel target="14">
-      <module name="sevens-core.game-listener.commonMain" target="1.6" />
-      <module name="sevens-core.game-listener.commonTest" target="1.6" />
-      <module name="sevens-core.game-listener.jvmMain" target="1.6" />
-      <module name="sevens-core.game-listener.jvmTest" target="1.6" />
-      <module name="sevens-core.logger.commonMain" target="1.6" />
-      <module name="sevens-core.logger.commonTest" target="1.6" />
-      <module name="sevens-core.logger.jvmMain" target="1.6" />
-      <module name="sevens-core.logger.jvmTest" target="1.6" />
       <module name="sevens-core.payload.commonMain" target="1.6" />
       <module name="sevens-core.payload.commonTest" target="1.6" />
       <module name="sevens-core.payload.jvmMain" target="1.6" />
       <module name="sevens-core.payload.jvmTest" target="1.6" />
-      <module name="sevens-core.socket.commonMain" target="1.6" />
-      <module name="sevens-core.socket.commonTest" target="1.6" />
-      <module name="sevens-core.socket.jvmMain" target="1.6" />
-      <module name="sevens-core.socket.jvmTest" target="1.6" />
       <module name="Sevens_Core.game-listener.commonMain" target="1.6" />
       <module name="Sevens_Core.game-listener.commonTest" target="1.6" />
       <module name="Sevens_Core.game-listener.jvmMain" target="1.6" />
@@ -30,6 +18,18 @@
       <module name="Sevens_Core.socket.commonTest" target="1.6" />
       <module name="Sevens_Core.socket.jvmMain" target="1.6" />
       <module name="Sevens_Core.socket.jvmTest" target="1.6" />
+      <module name="SevensCore.game-listener.commonMain" target="1.6" />
+      <module name="SevensCore.game-listener.commonTest" target="1.6" />
+      <module name="SevensCore.game-listener.jvmMain" target="1.6" />
+      <module name="SevensCore.game-listener.jvmTest" target="1.6" />
+      <module name="SevensCore.logger.commonMain" target="1.6" />
+      <module name="SevensCore.logger.commonTest" target="1.6" />
+      <module name="SevensCore.logger.jvmMain" target="1.6" />
+      <module name="SevensCore.logger.jvmTest" target="1.6" />
+      <module name="SevensCore.socket.commonMain" target="1.6" />
+      <module name="SevensCore.socket.commonTest" target="1.6" />
+      <module name="SevensCore.socket.jvmMain" target="1.6" />
+      <module name="SevensCore.socket.jvmTest" target="1.6" />
     </bytecodeTargetLevel>
   </component>
 </project>
